@@ -1,0 +1,134 @@
+{
+  "task": "i2",
+  "kev_type": "choice",
+  "seed": 20260925,
+  "variant": "main",
+  "extracted_at": null,
+  "source": "data/internal/raw",
+  "consort": {
+    "letters": 91212,
+    "cases": 61073,
+    "extra_letters": 30139,
+    "dropped_unmapped_code": 0,
+    "not_selected": 54773,
+    "dropped_no_ocr": 66,
+    "dropped_short_text": 4,
+    "codes_stripped": 3190,
+    "pool_train": 3126,
+    "n_train": 3000,
+    "pool_dev": 1038,
+    "n_dev": 1000,
+    "pool_test": 2066,
+    "n_test": 2000,
+    "patients_overlapping_splits": 39
+  },
+  "git_commit": "0d366413353fb487536b89c51bc273190b687248",
+  "splits": {
+    "train": {
+      "n": 3000,
+      "questions": {
+        "chapter": {
+          "type": "choice",
+          "labels": {
+            "II": 974,
+            "VI": 120,
+            "XI": 159,
+            "XIX": 98,
+            "IX": 652,
+            "X": 174,
+            "XIII": 257,
+            "XV": 156,
+            "IV": 95,
+            "I": 33,
+            "XXI": 64,
+            "VIII": 11,
+            "XVII": 33,
+            "XII": 13,
+            "III": 10,
+            "XVI": 53,
+            "XIV": 66,
+            "XVIII": 23,
+            "VII": 5,
+            "V": 4
+          }
+        }
+      }
+    },
+    "dev": {
+      "n": 1000,
+      "questions": {
+        "chapter": {
+          "type": "choice",
+          "labels": {
+            "XIV": 22,
+            "II": 272,
+            "VI": 27,
+            "IX": 305,
+            "X": 33,
+            "XIX": 27,
+            "XI": 48,
+            "XV": 63,
+            "XIII": 104,
+            "I": 6,
+            "IV": 19,
+            "XVI": 22,
+            "XVII": 14,
+            "XXI": 19,
+            "XVIII": 6,
+            "III": 2,
+            "XII": 4,
+            "V": 3,
+            "VII": 4
+          }
+        }
+      }
+    },
+    "test": {
+      "n": 2000,
+      "questions": {
+        "chapter": {
+          "type": "choice",
+          "labels": {
+            "XIV": 37,
+            "IX": 667,
+            "II": 492,
+            "XIII": 164,
+            "XI": 94,
+            "XV": 118,
+            "XIX": 72,
+            "X": 75,
+            "VI": 74,
+            "XVI": 45,
+            "XXI": 34,
+            "XVII": 23,
+            "VII": 18,
+            "IV": 39,
+            "XII": 11,
+            "XVIII": 10,
+            "I": 18,
+            "VIII": 2,
+            "V": 5,
+            "III": 2
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 3000,
+      "sha256": "159fe9795035ec51c28d8ef7762d0373de902af2855e69ef5e2b927a9592701a",
+      "bytes": 51036851
+    },
+    "dev.jsonl": {
+      "records": 1000,
+      "sha256": "cf63d423878fead73a6f4c3ef0e2fa228ad86632db3446a4f9723e5b1380eaba",
+      "bytes": 17474430
+    },
+    "test.jsonl": {
+      "records": 2000,
+      "sha256": "95d3b767d48ea6b9509f5b47c7d40c80c1ceb81a449b73de7dadc0fc579cf802",
+      "bytes": 32595287
+    }
+  }
+}

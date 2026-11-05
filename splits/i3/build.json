@@ -1,0 +1,95 @@
+{
+  "task": "i3",
+  "kev_type": "noul",
+  "seed": 20260925,
+  "variant": "main",
+  "extracted_at": null,
+  "source": "data/internal/raw",
+  "consort": {
+    "reports": 66737,
+    "dropped_no_behaviour": 662,
+    "dropped_short_text": 190,
+    "mixed_behaviour": 0,
+    "patients_overlapping_splits": 2156,
+    "n_train": 49466,
+    "n_dev": 9580,
+    "n_test": 6839
+  },
+  "git_commit": "8dc552224b150a7a6057cddd507a7fb550632e65",
+  "splits": {
+    "train": {
+      "n": 49466,
+      "questions": {
+        "malignant": {
+          "type": "noul",
+          "labels": {
+            "True": 43089,
+            "False": 6377
+          }
+        },
+        "metastatic": {
+          "type": "noul",
+          "labels": {
+            "False": 31040,
+            "True": 11136
+          }
+        }
+      }
+    },
+    "dev": {
+      "n": 9580,
+      "questions": {
+        "malignant": {
+          "type": "noul",
+          "labels": {
+            "True": 8133,
+            "False": 1447
+          }
+        },
+        "metastatic": {
+          "type": "noul",
+          "labels": {
+            "False": 6134,
+            "True": 1844
+          }
+        }
+      }
+    },
+    "test": {
+      "n": 6839,
+      "questions": {
+        "malignant": {
+          "type": "noul",
+          "labels": {
+            "False": 874,
+            "True": 5965
+          }
+        },
+        "metastatic": {
+          "type": "noul",
+          "labels": {
+            "False": 4399,
+            "True": 1449
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 49466,
+      "sha256": "b61f1441694fcf4576dd814de6ddd9dc8e4b905f6adc132b682fe1cdc71dbece",
+      "bytes": 125456249
+    },
+    "dev.jsonl": {
+      "records": 9580,
+      "sha256": "7e44750c0bea5e8649fb7c7565f52590e9277f2889dbaacbc423dfe7487b4c4a",
+      "bytes": 24377584
+    },
+    "test.jsonl": {
+      "records": 6839,
+      "sha256": "725aed8012f2fe0fa93c638392850548defe292c3dc2bb1a129613c4ef64eaa7",
+      "bytes": 17956443
+    }
+  }
+}

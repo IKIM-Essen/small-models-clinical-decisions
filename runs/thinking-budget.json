@@ -1,0 +1,281 @@
+{
+ "deepseek-v4.1-flash-think-k0-i1": {
+  "calls": 41223,
+  "ge4096": 6578,
+  "ge8192": 1894,
+  "max_completion": 8192,
+  "status": {
+   "ok": 39329,
+   "parse_failure": 1894
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k0-i2": {
+  "calls": 2099,
+  "ge4096": 51,
+  "ge8192": 24,
+  "max_completion": 8192,
+  "status": {
+   "ok": 1977,
+   "fallback_discarded": 34,
+   "rate_limit": 65,
+   "parse_failure": 23
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k0-i3": {
+  "calls": 12864,
+  "ge4096": 11,
+  "ge8192": 2,
+  "max_completion": 8192,
+  "status": {
+   "ok": 12685,
+   "fallback_discarded": 109,
+   "rate_limit": 68,
+   "parse_failure": 2
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k0-p1": {
+  "calls": 44253,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 4085,
+  "status": {
+   "ok": 44250,
+   "fallback_discarded": 3
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k0-p2": {
+  "calls": 1448,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 3912,
+  "status": {
+   "ok": 1422,
+   "fallback_discarded": 25,
+   "rate_limit": 1
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k0-p3": {
+  "calls": 83784,
+  "ge4096": 742,
+  "ge8192": 168,
+  "max_completion": 8192,
+  "status": {
+   "ok": 83616,
+   "parse_failure": 168
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k3-i1": {
+  "calls": 39474,
+  "ge4096": 1181,
+  "ge8192": 201,
+  "max_completion": 8192,
+  "status": {
+   "ok": 39274,
+   "parse_failure": 200
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k3-i2": {
+  "calls": 2113,
+  "ge4096": 8,
+  "ge8192": 3,
+  "max_completion": 8192,
+  "status": {
+   "fallback_discarded": 29,
+   "ok": 1997,
+   "rate_limit": 84,
+   "parse_failure": 3
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k3-i3": {
+  "calls": 12867,
+  "ge4096": 11,
+  "ge8192": 3,
+  "max_completion": 8192,
+  "status": {
+   "ok": 12684,
+   "fallback_discarded": 96,
+   "rate_limit": 84,
+   "parse_failure": 3
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k3-p1": {
+  "calls": 44252,
+  "ge4096": 13,
+  "ge8192": 1,
+  "max_completion": 8192,
+  "status": {
+   "ok": 44249,
+   "fallback_discarded": 2,
+   "parse_failure": 1
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k3-p2": {
+  "calls": 1450,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 4083,
+  "status": {
+   "ok": 1421,
+   "fallback_discarded": 28,
+   "rate_limit": 1
+  },
+  "finish": {}
+ },
+ "deepseek-v4.1-flash-think-k3-p3": {
+  "calls": 83696,
+  "ge4096": 427,
+  "ge8192": 68,
+  "max_completion": 8192,
+  "status": {
+   "ok": 83628,
+   "parse_failure": 68
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k0-i1": {
+  "calls": 39677,
+  "ge4096": 826,
+  "ge8192": 213,
+  "max_completion": 8192,
+  "status": {
+   "ok": 39444,
+   "server": 20,
+   "parse_failure": 213
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k0-i2": {
+  "calls": 2095,
+  "ge4096": 1,
+  "ge8192": 0,
+  "max_completion": 4096,
+  "status": {
+   "fallback_discarded": 18,
+   "ok": 2000,
+   "rate_limit": 77
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k0-i3": {
+  "calls": 12782,
+  "ge4096": 1,
+  "ge8192": 0,
+  "max_completion": 4130,
+  "status": {
+   "ok": 12687,
+   "fallback_discarded": 21,
+   "rate_limit": 74
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k0-p1": {
+  "calls": 44254,
+  "ge4096": 2,
+  "ge8192": 0,
+  "max_completion": 7036,
+  "status": {
+   "ok": 44250,
+   "fallback_discarded": 3,
+   "server": 1
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k0-p2": {
+  "calls": 1424,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 2654,
+  "status": {
+   "ok": 1422,
+   "fallback_discarded": 2
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k0-p3": {
+  "calls": 83647,
+  "ge4096": 72,
+  "ge8192": 18,
+  "max_completion": 8192,
+  "status": {
+   "ok": 83629,
+   "parse_failure": 18
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k3-i1": {
+  "calls": 39474,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 69,
+  "status": {
+   "ok": 39474
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k3-i2": {
+  "calls": 2086,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 3980,
+  "status": {
+   "ok": 2000,
+   "fallback_discarded": 13,
+   "rate_limit": 73
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k3-i3": {
+  "calls": 12796,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 4019,
+  "status": {
+   "ok": 12687,
+   "fallback_discarded": 27,
+   "rate_limit": 82
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k3-p1": {
+  "calls": 44253,
+  "ge4096": 1,
+  "ge8192": 1,
+  "max_completion": 8192,
+  "status": {
+   "ok": 44249,
+   "fallback_discarded": 3,
+   "parse_failure": 1
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k3-p2": {
+  "calls": 1422,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 1461,
+  "status": {
+   "ok": 1422
+  },
+  "finish": {}
+ },
+ "kimi-k3-think-k3-p3": {
+  "calls": 83633,
+  "ge4096": 0,
+  "ge8192": 0,
+  "max_completion": 327,
+  "status": {
+   "ok": 83633
+  },
+  "finish": {}
+ }
+}

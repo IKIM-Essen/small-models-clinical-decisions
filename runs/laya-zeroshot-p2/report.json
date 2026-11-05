@@ -1,0 +1,239 @@
+{
+  "objective": -0.8347080620139615,
+  "paired_flip": null,
+  "unknowable": null,
+  "clean": {
+    "n": 1395,
+    "nll": 0.8347080620139615,
+    "acc": 0.7211469534050179,
+    "ece": 0.1631864957766908,
+    "brier": 0.45053205318898404,
+    "mean_conf": 0.8843334491817088,
+    "confident_error_rate": 0.12688172043010754,
+    "coverage_at_0_9": 0.63584229390681,
+    "accuracy_at_0_9": 0.8004509582863585,
+    "coverage_at_5pct_error": 0.08960573476702509,
+    "coverage_at_1pct_error": 0.01863799283154122,
+    "aurc": 0.15986926200920856,
+    "error_rate_at_0_9": 0.1995490417136415,
+    "confidence_bias": 0.16318649577669087,
+    "top_bins": {
+      "0.9": {
+        "n": 887,
+        "errors": 177,
+        "error_rate": 0.1995490417136415
+      },
+      "0.95": {
+        "n": 570,
+        "errors": 77,
+        "error_rate": 0.13508771929824562
+      },
+      "0.99": {
+        "n": 2,
+        "errors": 0,
+        "error_rate": 0.0
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5003584229390681,
+        "accuracy": 0.8409742120343839,
+        "confidence_cutoff": 0.9325
+      },
+      "0.8": {
+        "coverage": 0.8,
+        "accuracy": 0.7688172043010753,
+        "confidence_cutoff": 0.8173
+      }
+    }
+  },
+  "tasks": {
+    "custom_choice": {
+      "n": 1395,
+      "nll": 0.8347080620139615,
+      "acc": 0.7211469534050179,
+      "ece": 0.1631864957766908,
+      "brier": 0.45053205318898404,
+      "mean_conf": 0.8843334491817088,
+      "confident_error_rate": 0.12688172043010754,
+      "coverage_at_0_9": 0.63584229390681,
+      "accuracy_at_0_9": 0.8004509582863585,
+      "coverage_at_5pct_error": 0.08960573476702509,
+      "coverage_at_1pct_error": 0.01863799283154122,
+      "aurc": 0.15986926200920856,
+      "error_rate_at_0_9": 0.1995490417136415,
+      "confidence_bias": 0.16318649577669087,
+      "top_bins": {
+        "0.9": {
+          "n": 887,
+          "errors": 177,
+          "error_rate": 0.1995490417136415
+        },
+        "0.95": {
+          "n": 570,
+          "errors": 77,
+          "error_rate": 0.13508771929824562
+        },
+        "0.99": {
+          "n": 2,
+          "errors": 0,
+          "error_rate": 0.0
+        }
+      },
+      "selective": {
+        "0.5": {
+          "coverage": 0.5003584229390681,
+          "accuracy": 0.8409742120343839,
+          "confidence_cutoff": 0.9325
+        },
+        "0.8": {
+          "coverage": 0.8,
+          "accuracy": 0.7688172043010753,
+          "confidence_cutoff": 0.8173
+        }
+      }
+    }
+  },
+  "variants": {
+    "clean": {
+      "n": 1395,
+      "nll": 0.8347080620139615,
+      "acc": 0.7211469534050179,
+      "ece": 0.1631864957766908,
+      "brier": 0.45053205318898404,
+      "mean_conf": 0.8843334491817088,
+      "confident_error_rate": 0.12688172043010754,
+      "coverage_at_0_9": 0.63584229390681,
+      "accuracy_at_0_9": 0.8004509582863585,
+      "coverage_at_5pct_error": 0.08960573476702509,
+      "coverage_at_1pct_error": 0.01863799283154122,
+      "aurc": 0.15986926200920856,
+      "error_rate_at_0_9": 0.1995490417136415,
+      "confidence_bias": 0.16318649577669087,
+      "top_bins": {
+        "0.9": {
+          "n": 887,
+          "errors": 177,
+          "error_rate": 0.1995490417136415
+        },
+        "0.95": {
+          "n": 570,
+          "errors": 77,
+          "error_rate": 0.13508771929824562
+        },
+        "0.99": {
+          "n": 2,
+          "errors": 0,
+          "error_rate": 0.0
+        }
+      },
+      "selective": {
+        "0.5": {
+          "coverage": 0.5003584229390681,
+          "accuracy": 0.8409742120343839,
+          "confidence_cutoff": 0.9325
+        },
+        "0.8": {
+          "coverage": 0.8,
+          "accuracy": 0.7688172043010753,
+          "confidence_cutoff": 0.8173
+        }
+      }
+    }
+  },
+  "heldout_tasks": {},
+  "permutation": {
+    "n": 0,
+    "mean_max_delta": null,
+    "flip_rate": null
+  },
+  "temperature": 1.0,
+  "calibrated_clean": {
+    "n": 1395,
+    "nll": 0.8347080620139615,
+    "acc": 0.7211469534050179,
+    "ece": 0.1631864957766908,
+    "brier": 0.45053205318898404,
+    "mean_conf": 0.8843334491817088,
+    "confident_error_rate": 0.12688172043010754,
+    "coverage_at_0_9": 0.63584229390681,
+    "accuracy_at_0_9": 0.8004509582863585,
+    "coverage_at_5pct_error": 0.08960573476702509,
+    "coverage_at_1pct_error": 0.01863799283154122,
+    "aurc": 0.15986926200920856,
+    "error_rate_at_0_9": 0.1995490417136415,
+    "confidence_bias": 0.16318649577669087,
+    "top_bins": {
+      "0.9": {
+        "n": 887,
+        "errors": 177,
+        "error_rate": 0.1995490417136415
+      },
+      "0.95": {
+        "n": 570,
+        "errors": 77,
+        "error_rate": 0.13508771929824562
+      },
+      "0.99": {
+        "n": 2,
+        "errors": 0,
+        "error_rate": 0.0
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5003584229390681,
+        "accuracy": 0.8409742120343839,
+        "confidence_cutoff": 0.9325
+      },
+      "0.8": {
+        "coverage": 0.8,
+        "accuracy": 0.7688172043010753,
+        "confidence_cutoff": 0.8173
+      }
+    }
+  },
+  "metric_policy": {
+    "version": 2,
+    "selective_ties": "whole_confidence_groups",
+    "coverage_at_error": "in-sample maximum over confidence thresholds; not a deployed error guarantee",
+    "aurc": "right-step integral over whole confidence groups",
+    "confident_error_rate": "high-confidence errors divided by all questions",
+    "error_rate_at_0_9": "errors divided by questions accepted at p_max >= 0.9",
+    "nll": "exact from logits when recorded; otherwise from floored probabilities",
+    "nll_floor": 1e-09,
+    "renormalize_returned_probabilities": true,
+    "raw_sums_outside_1e_5": 351,
+    "returned_zeros": 0
+  },
+  "coverage": {
+    "requested_records": 1395,
+    "requested_questions": 1395,
+    "evaluated_records": 1395,
+    "evaluated_questions": 1395,
+    "rejected_records": 0,
+    "truncated_records": 0
+  },
+  "latency_ms": {
+    "median": 192.20755621790886,
+    "p95": 202.50283479690552
+  },
+  "calibration": {
+    "inference_temperature": null,
+    "additional_temperature": 1.0,
+    "logits_recorded": false
+  },
+  "suite_sha256": "251bdaa5de2d499d87f4d827f3026d49820fd75114f6d3cc00783d279b049287",
+  "data": "runs/laya-tmp/p2-dev.sanitized.jsonl",
+  "date_facts": false,
+  "rotations": 1,
+  "run": "http://127.0.0.1:8020",
+  "split": "custom",
+  "calibration_applied": null,
+  "remote": {
+    "base_url": "http://127.0.0.1:8020",
+    "requested_model": "english",
+    "served_model": "laya-rl-agent",
+    "concurrency": 8
+  }
+}

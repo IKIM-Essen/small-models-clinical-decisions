@@ -1,0 +1,49 @@
+{
+  "kev_revisions": {
+    "jaredpalmer/kev-0.8b": "bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+    "jaredpalmer/kev-4b": "6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+    "jaredpalmer/kev-9b": "db029f08b290afd9fee4aa4bbcd9ae48602d1eb0",
+    "jaredpalmer/kev-27b": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf"
+  },
+  "kev_revisions_resolved_at": "2026-10-07T10:30:00+00:00",
+  "kev_revisions_note": "Each jaredpalmer/kev-* repo's Hub revision, resolved from the HF API (lastModified 2026-10-01T17:17-18Z for all four).",
+  "models": {
+    "Cloudflare/clef-flash": {
+      "revision": "17f0b0ad64efb65d273590632833508766b2aae6",
+      "resolved_at": "2026-10-07T11:38:58.050697+00:00",
+      "local_path": "~/.cache/huggingface/models--Cloudflare--clef-flash/snapshots/17f0b0ad64efb65d273590632833508766b2aae6",
+      "local_size_bytes": 19083377402
+    },
+    "jaredpalmer/kev-27b": {
+      "revision": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
+      "resolved_at": "2026-10-07T10:30:00+00:00",
+      "local_path": "~/.cache/huggingface/models--jaredpalmer--kev-27b/snapshots/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
+      "local_size_bytes": 51279886109
+    },
+    "Cloudflare/clef": {
+      "revision": "2f3de3dd85f379784083b0814d997ab627200f0c",
+      "resolved_at": "2026-10-07T11:51:31.729248+00:00",
+      "local_path": "~/.cache/huggingface/models--Cloudflare--clef/snapshots/2f3de3dd85f379784083b0814d997ab627200f0c",
+      "local_size_bytes": 54989894057
+    },
+    "perplexity-ai/pplx-decider-v1-27b": {
+      "revision": "5117a6c7fe73b19308dc1a6b0fb529a40c2ecad4",
+      "resolved_at": "2026-10-07T11:56:56.987248+00:00",
+      "local_path": "~/.cache/huggingface/models--perplexity-ai--pplx-decider-v1-27b/snapshots/5117a6c7fe73b19308dc1a6b0fb529a40c2ecad4",
+      "local_size_bytes": 52194574950
+    },
+    "perplexity-ai/pplx-decider-v1.1-27b": {
+      "revision": "3b45dead91dfa6d95aad6b95764a606fab2bf7a6",
+      "resolved_at": "2026-10-08T19:07:40.168287+00:00",
+      "local_path": "~/.cache/huggingface/models--perplexity-ai--pplx-decider-v1.1-27b/snapshots/3b45dead91dfa6d95aad6b95764a606fab2bf7a6",
+      "local_size_bytes": 52194612225
+    },
+    "Qwen/Qwen3.5-4B": {
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "resolved_at": "2026-10-17T15:40:00+00:00",
+      "local_path": "~/.cache/huggingface/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "local_size_bytes": 9342907469,
+      "note": "Qwen3.5-4B Instruct (size-matched tier: zero/few shot and the LoRA-SFT baseline); Hub lastModified 2026-03-02"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+ "note": "I2 letters whose text contains none of the expected diagnosis/assessment headings (kevmed.context.section_first falls back to truncation from the start); counts only",
+ "headings": [
+  "hauptdiagnose",
+  "diagnosen bei entlassung",
+  "diagnosen",
+  "diagnose",
+  "nebendiagnosen",
+  "beurteilung",
+  "epikrise",
+  "zusammenfassung"
+ ],
+ "splits": {
+  "train": {
+   "n": 3000,
+   "no_heading": 656,
+   "share": 0.21866666666666668
+  },
+  "dev": {
+   "n": 1000,
+   "no_heading": 263,
+   "share": 0.263
+  },
+  "test": {
+   "n": 2000,
+   "no_heading": 323,
+   "share": 0.1615
+  }
+ }
+}

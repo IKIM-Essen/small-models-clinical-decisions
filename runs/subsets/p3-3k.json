@@ -1,0 +1,20 @@
+{
+ "source": "splits/p3/train.jsonl",
+ "source_sha256": "a9c4aeaa9130e5b7a632ac20ac4eb855f00399cd38ee3511898cfccff6745246",
+ "out": "data/derived/p3-3k/train.jsonl",
+ "out_sha256": "7f9f397a2ed32c59995195b38f27a14ba1ed86ba680810244b1d7fed684f72a7",
+ "n_requested": 3000,
+ "n_records": 3000,
+ "n_groups": 1553,
+ "n_source_records": 292688,
+ "seed": 20261017,
+ "labels": {
+  "acuity": {
+   "0": 162,
+   "1": 973,
+   "2": 1619,
+   "3": 240,
+   "4": 6
+  }
+ }
+}

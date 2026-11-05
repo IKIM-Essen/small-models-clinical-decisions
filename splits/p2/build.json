@@ -1,0 +1,75 @@
+{
+  "task": "p2",
+  "kev_type": "choice",
+  "seed": 20260925,
+  "variant": "main",
+  "extracted_at": null,
+  "source": "data/public/physionet",
+  "consort": {
+    "rows_in_source": 14049,
+    "dropped_unknown_label": 0,
+    "dropped_empty": 0,
+    "n_train": 11232,
+    "n_dev": 1395,
+    "n_test": 1422
+  },
+  "git_commit": "e889bdca5f4d8af2aad0807984531bcdc1becc85",
+  "splits": {
+    "train": {
+      "n": 11232,
+      "questions": {
+        "relation": {
+          "type": "choice",
+          "labels": {
+            "entailment": 3744,
+            "contradiction": 3744,
+            "neutral": 3744
+          }
+        }
+      }
+    },
+    "dev": {
+      "n": 1395,
+      "questions": {
+        "relation": {
+          "type": "choice",
+          "labels": {
+            "entailment": 465,
+            "contradiction": 465,
+            "neutral": 465
+          }
+        }
+      }
+    },
+    "test": {
+      "n": 1422,
+      "questions": {
+        "relation": {
+          "type": "choice",
+          "labels": {
+            "entailment": 474,
+            "contradiction": 474,
+            "neutral": 474
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 11232,
+      "sha256": "ca7740788fabd9604771a088a7425ba0dd26c5ff560e00bae9ef17364a8366dc",
+      "bytes": 8164364
+    },
+    "dev.jsonl": {
+      "records": 1395,
+      "sha256": "74c753f996bf7f61bd214cf095d0bf04ee733491688970d96be66ac0c42ad104",
+      "bytes": 1021796
+    },
+    "test.jsonl": {
+      "records": 1422,
+      "sha256": "75d34b2b078267ac6fe79d7a69e494b8a0b3d2f564442abd36a298daa5fb4aed",
+      "bytes": 1029020
+    }
+  }
+}

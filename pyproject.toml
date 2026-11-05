@@ -1,0 +1,41 @@
+[project]
+name = "small-models-clinical-decision"
+version = "1.0.0"
+description = "Fine-tuned 4B models versus prompted open-weight frontier models on clinical text classification"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "kev[serve]",
+    "httpx>=0.28",
+    "packaging>=24",
+    "psycopg[binary]>=3.2",
+    "flash-linear-attention==0.5.2; sys_platform == 'linux'",
+    # Fast conv kernel for the Qwen3.5 Gated DeltaNet layers (Kev, Clef, pplx-decider); without it transformers falls
+    # back to a slow reference implementation. PyPI ships only the sdist, so take the prebuilt wheel matching torch 2.8.
+    "causal-conv1d @ https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.7.0/causal_conv1d-1.7.0+cu12torch2.8cxx11abiTRUE-cp313-cp313-linux_x86_64.whl ; sys_platform == 'linux' and platform_machine == 'x86_64' and python_version == '3.13'",
+    "pyarrow>=15",
+    "openpyxl>=3.1.5",
+    "pillow>=10",      # image processor backend needed to load Clef and Clef-flash, text-only use
+    "torchvision",     # same reason: their AutoProcessor also resolves a video processor backend
+]
+
+[dependency-groups]
+dev = ["pytest>=9.1"]
+
+[tool.uv.sources]
+kev = { path = "third_party/kev", editable = true }
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+override-dependencies = ["triton>=3.7.1; sys_platform == 'linux'"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["kevmed", "kevmed.tasks", "kevmed.fmx"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

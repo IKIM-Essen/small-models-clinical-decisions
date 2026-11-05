@@ -1,0 +1,750 @@
+{
+ "i1": {
+  "dev": {
+   "age": {
+    "max": 100.0,
+    "median": 60.0,
+    "min": 0.0,
+    "missing": 197,
+    "n": 53299,
+    "q1": 40.0,
+    "q3": 70.0
+   },
+   "labels": {
+    "los": {
+     "1 day or less": 2072,
+     "2 to 3 days": 21901,
+     "4 to 7 days": 16885,
+     "more than 7 days": 12638
+    }
+   },
+   "n_groups": 35956,
+   "n_records": 53496,
+   "sex": {
+    "female": 25520,
+    "male": 27759,
+    "other": 16,
+    "unknown": 201
+   },
+   "years": {
+    "counts": {
+     "2025": 53496
+    },
+    "max": 2025,
+    "min": 2025
+   }
+  },
+  "subset": {
+   "age": {
+    "max": 99.0,
+    "median": 59.0,
+    "min": 0.0,
+    "missing": 8,
+    "n": 2992,
+    "q1": 39.0,
+    "q3": 70.0
+   },
+   "labels": {
+    "los": {
+     "1 day or less": 88,
+     "2 to 3 days": 1133,
+     "4 to 7 days": 1019,
+     "more than 7 days": 760
+    }
+   },
+   "n_groups": 1691,
+   "n_records": 3000,
+   "sex": {
+    "female": 1386,
+    "male": 1605,
+    "unknown": 9
+   },
+   "years": {
+    "counts": {
+     "2021": 722,
+     "2022": 706,
+     "2023": 772,
+     "2024": 800
+    },
+    "max": 2024,
+    "min": 2021
+   }
+  },
+  "test": {
+   "age": {
+    "max": 103.0,
+    "median": 60.0,
+    "min": 0.0,
+    "missing": 63,
+    "n": 40246,
+    "q1": 40.0,
+    "q3": 70.0
+   },
+   "labels": {
+    "los": {
+     "1 day or less": 2522,
+     "2 to 3 days": 16980,
+     "4 to 7 days": 12023,
+     "more than 7 days": 8784
+    }
+   },
+   "n_groups": 28463,
+   "n_records": 40309,
+   "sex": {
+    "female": 19419,
+    "male": 20821,
+    "other": 4,
+    "unknown": 65
+   },
+   "years": {
+    "counts": {
+     "2026": 40309
+    },
+    "max": 2026,
+    "min": 2026
+   }
+  },
+  "train": {
+   "age": {
+    "max": 101.0,
+    "median": 59.0,
+    "min": -3.0,
+    "missing": 772,
+    "n": 203608,
+    "q1": 38.0,
+    "q3": 70.0
+   },
+   "labels": {
+    "los": {
+     "1 day or less": 7101,
+     "2 to 3 days": 79731,
+     "4 to 7 days": 65780,
+     "more than 7 days": 51768
+    }
+   },
+   "n_groups": 116105,
+   "n_records": 204380,
+   "sex": {
+    "female": 96655,
+    "male": 106920,
+    "other": 17,
+    "unknown": 788
+   },
+   "years": {
+    "counts": {
+     "2021": 50584,
+     "2022": 48978,
+     "2023": 51902,
+     "2024": 52916
+    },
+    "max": 2024,
+    "min": 2021
+   }
+  }
+ },
+ "i2": {
+  "dev": {
+   "labels": {
+    "chapter": {
+     "I": 6,
+     "II": 272,
+     "III": 2,
+     "IV": 19,
+     "IX": 305,
+     "V": 3,
+     "VI": 27,
+     "VII": 4,
+     "X": 33,
+     "XI": 48,
+     "XII": 4,
+     "XIII": 104,
+     "XIV": 22,
+     "XIX": 27,
+     "XV": 63,
+     "XVI": 22,
+     "XVII": 14,
+     "XVIII": 6,
+     "XXI": 19
+    }
+   },
+   "n_groups": 834,
+   "n_records": 1000,
+   "years": {
+    "counts": {
+     "2025": 1000
+    },
+    "max": 2025,
+    "min": 2025
+   }
+  },
+  "test": {
+   "labels": {
+    "chapter": {
+     "I": 18,
+     "II": 492,
+     "III": 2,
+     "IV": 39,
+     "IX": 667,
+     "V": 5,
+     "VI": 74,
+     "VII": 18,
+     "VIII": 2,
+     "X": 75,
+     "XI": 94,
+     "XII": 11,
+     "XIII": 164,
+     "XIV": 37,
+     "XIX": 72,
+     "XV": 118,
+     "XVI": 45,
+     "XVII": 23,
+     "XVIII": 10,
+     "XXI": 34
+    }
+   },
+   "n_groups": 1800,
+   "n_records": 2000,
+   "years": {
+    "counts": {
+     "2026": 2000
+    },
+    "max": 2026,
+    "min": 2026
+   }
+  },
+  "train": {
+   "labels": {
+    "chapter": {
+     "I": 33,
+     "II": 974,
+     "III": 10,
+     "IV": 95,
+     "IX": 652,
+     "V": 4,
+     "VI": 120,
+     "VII": 5,
+     "VIII": 11,
+     "X": 174,
+     "XI": 159,
+     "XII": 13,
+     "XIII": 257,
+     "XIV": 66,
+     "XIX": 98,
+     "XV": 156,
+     "XVI": 53,
+     "XVII": 33,
+     "XVIII": 23,
+     "XXI": 64
+    }
+   },
+   "n_groups": 2249,
+   "n_records": 3000,
+   "years": {
+    "counts": {
+     "2023": 1724,
+     "2024": 1276
+    },
+    "max": 2024,
+    "min": 2023
+   }
+  }
+ },
+ "i3": {
+  "dev": {
+   "labels": {
+    "malignant": {
+     "False": 1447,
+     "True": 8133
+    },
+    "metastatic": {
+     "False": 6134,
+     "True": 1844
+    }
+   },
+   "n_groups": 6522,
+   "n_records": 9580,
+   "years": {
+    "counts": {
+     "2025": 9580
+    },
+    "max": 2025,
+    "min": 2025
+   }
+  },
+  "subset": {
+   "labels": {
+    "malignant": {
+     "False": 368,
+     "True": 2632
+    },
+    "metastatic": {
+     "False": 1924,
+     "True": 658
+    }
+   },
+   "n_groups": 1738,
+   "n_records": 3000,
+   "years": {
+    "counts": {
+     "2019": 487,
+     "2020": 554,
+     "2021": 478,
+     "2022": 477,
+     "2023": 457,
+     "2024": 547
+    },
+    "max": 2024,
+    "min": 2019
+   }
+  },
+  "test": {
+   "labels": {
+    "malignant": {
+     "False": 874,
+     "True": 5965
+    },
+    "metastatic": {
+     "False": 4399,
+     "True": 1449
+    }
+   },
+   "n_groups": 4911,
+   "n_records": 6839,
+   "years": {
+    "counts": {
+     "2026": 6839
+    },
+    "max": 2026,
+    "min": 2026
+   }
+  },
+  "train": {
+   "labels": {
+    "malignant": {
+     "False": 6377,
+     "True": 43089
+    },
+    "metastatic": {
+     "False": 31040,
+     "True": 11136
+    }
+   },
+   "n_groups": 29586,
+   "n_records": 49466,
+   "years": {
+    "counts": {
+     "2019": 8471,
+     "2020": 8409,
+     "2021": 8311,
+     "2022": 7352,
+     "2023": 7621,
+     "2024": 9302
+    },
+    "max": 2024,
+    "min": 2019
+   }
+  }
+ },
+ "p1": {
+  "dev": {
+   "labels": {
+    "atelectasis": {
+     "False": 1354,
+     "True": 359
+    },
+    "cardiomegaly": {
+     "False": 1372,
+     "True": 377
+    },
+    "consolidation": {
+     "False": 1678,
+     "True": 82
+    },
+    "edema": {
+     "False": 1458,
+     "True": 242
+    },
+    "enlarged_cardiomediastinum": {
+     "False": 1660,
+     "True": 60
+    },
+    "fracture": {
+     "False": 1787,
+     "True": 18
+    },
+    "lung_lesion": {
+     "False": 1729,
+     "True": 70
+    },
+    "lung_opacity": {
+     "False": 1394,
+     "True": 388
+    },
+    "no_finding": {
+     "False": 1226,
+     "True": 582
+    },
+    "pleural_effusion": {
+     "False": 1296,
+     "True": 467
+    },
+    "pleural_other": {
+     "False": 1787,
+     "True": 15
+    },
+    "pneumonia": {
+     "False": 1536,
+     "True": 128
+    },
+    "pneumothorax": {
+     "False": 1724,
+     "True": 75
+    },
+    "support_devices": {
+     "False": 1240,
+     "True": 565
+    }
+   },
+   "n_groups": 500,
+   "n_records": 1808
+  },
+  "subset": {
+   "labels": {
+    "atelectasis": {
+     "False": 2222,
+     "True": 663
+    },
+    "cardiomegaly": {
+     "False": 2321,
+     "True": 603
+    },
+    "consolidation": {
+     "False": 2785,
+     "True": 158
+    },
+    "edema": {
+     "False": 2450,
+     "True": 380
+    },
+    "enlarged_cardiomediastinum": {
+     "False": 2766,
+     "True": 107
+    },
+    "fracture": {
+     "False": 2921,
+     "True": 73
+    },
+    "lung_lesion": {
+     "False": 2885,
+     "True": 95
+    },
+    "lung_opacity": {
+     "False": 2247,
+     "True": 714
+    },
+    "no_finding": {
+     "False": 2077,
+     "True": 923
+    },
+    "pleural_effusion": {
+     "False": 2135,
+     "True": 801
+    },
+    "pleural_other": {
+     "False": 2960,
+     "True": 30
+    },
+    "pneumonia": {
+     "False": 2551,
+     "True": 207
+    },
+    "pneumothorax": {
+     "False": 2777,
+     "True": 205
+    },
+    "support_devices": {
+     "False": 2035,
+     "True": 962
+    }
+   },
+   "n_groups": 806,
+   "n_records": 3000
+  },
+  "test": {
+   "labels": {
+    "atelectasis": {
+     "False": 2347,
+     "True": 731
+    },
+    "cardiomegaly": {
+     "False": 2288,
+     "True": 866
+    },
+    "consolidation": {
+     "False": 2952,
+     "True": 220
+    },
+    "edema": {
+     "False": 2297,
+     "True": 683
+    },
+    "enlarged_cardiomediastinum": {
+     "False": 2914,
+     "True": 151
+    },
+    "fracture": {
+     "False": 3176,
+     "True": 89
+    },
+    "lung_lesion": {
+     "False": 3128,
+     "True": 123
+    },
+    "lung_opacity": {
+     "False": 2152,
+     "True": 1038
+    },
+    "no_finding": {
+     "False": 2701,
+     "True": 568
+    },
+    "pleural_effusion": {
+     "False": 2065,
+     "True": 1074
+    },
+    "pleural_other": {
+     "False": 3190,
+     "True": 63
+    },
+    "pneumonia": {
+     "False": 2584,
+     "True": 335
+    },
+    "pneumothorax": {
+     "False": 3138,
+     "True": 112
+    },
+    "support_devices": {
+     "False": 2140,
+     "True": 1125
+    }
+   },
+   "n_groups": 293,
+   "n_records": 3269
+  },
+  "train": {
+   "labels": {
+    "atelectasis": {
+     "False": 167991,
+     "True": 44718
+    },
+    "cardiomegaly": {
+     "False": 173279,
+     "True": 43602
+    },
+    "consolidation": {
+     "False": 208088,
+     "True": 10476
+    },
+    "edema": {
+     "False": 183880,
+     "True": 26093
+    },
+    "enlarged_cardiomediastinum": {
+     "False": 206699,
+     "True": 6968
+    },
+    "fracture": {
+     "False": 217919,
+     "True": 4283
+    },
+    "lung_lesion": {
+     "False": 215545,
+     "True": 6091
+    },
+    "lung_opacity": {
+     "False": 168925,
+     "True": 50099
+    },
+    "no_finding": {
+     "False": 148445,
+     "True": 74305
+    },
+    "pleural_effusion": {
+     "False": 164352,
+     "True": 52759
+    },
+    "pleural_other": {
+     "False": 220074,
+     "True": 1933
+    },
+    "pneumonia": {
+     "False": 188860,
+     "True": 16093
+    },
+    "pneumothorax": {
+     "False": 211473,
+     "True": 10171
+    },
+    "support_devices": {
+     "False": 157652,
+     "True": 64868
+    }
+   },
+   "n_groups": 64586,
+   "n_records": 222750
+  }
+ },
+ "p2": {
+  "dev": {
+   "labels": {
+    "relation": {
+     "contradiction": 465,
+     "entailment": 465,
+     "neutral": 465
+    }
+   },
+   "n_groups": 1395,
+   "n_records": 1395
+  },
+  "subset": {
+   "labels": {
+    "relation": {
+     "contradiction": 980,
+     "entailment": 999,
+     "neutral": 1021
+    }
+   },
+   "n_groups": 3000,
+   "n_records": 3000
+  },
+  "test": {
+   "labels": {
+    "relation": {
+     "contradiction": 474,
+     "entailment": 474,
+     "neutral": 474
+    }
+   },
+   "n_groups": 1422,
+   "n_records": 1422
+  },
+  "train": {
+   "labels": {
+    "relation": {
+     "contradiction": 3744,
+     "entailment": 3744,
+     "neutral": 3744
+    }
+   },
+   "n_groups": 11232,
+   "n_records": 11232
+  }
+ },
+ "p3": {
+  "dev": {
+   "age": {
+    "max": 91.0,
+    "median": 54.0,
+    "min": 18.0,
+    "missing": 0,
+    "n": 41689,
+    "q1": 35.0,
+    "q3": 69.0
+   },
+   "labels": {
+    "acuity": {
+     "ESI 1: resuscitation, immediate life-saving intervention": 2444,
+     "ESI 2: emergent, high risk": 13958,
+     "ESI 3: urgent, two or more resources expected": 22343,
+     "ESI 4: less urgent, one resource expected": 2825,
+     "ESI 5: non-urgent, no resources expected": 119
+    }
+   },
+   "n_groups": 20115,
+   "n_records": 41689,
+   "sex": {
+    "f": 22575,
+    "m": 19114
+   }
+  },
+  "subset": {
+   "age": {
+    "max": 91.0,
+    "median": 53.0,
+    "min": 18.0,
+    "missing": 0,
+    "n": 3000,
+    "q1": 35.0,
+    "q3": 68.0
+   },
+   "labels": {
+    "acuity": {
+     "ESI 1: resuscitation, immediate life-saving intervention": 162,
+     "ESI 2: emergent, high risk": 973,
+     "ESI 3: urgent, two or more resources expected": 1619,
+     "ESI 4: less urgent, one resource expected": 240,
+     "ESI 5: non-urgent, no resources expected": 6
+    }
+   },
+   "n_groups": 1553,
+   "n_records": 3000,
+   "sex": {
+    "f": 1605,
+    "m": 1395
+   }
+  },
+  "test": {
+   "age": {
+    "max": 91.0,
+    "median": 53.0,
+    "min": 18.0,
+    "missing": 0,
+    "n": 83648,
+    "q1": 34.0,
+    "q3": 69.0
+   },
+   "labels": {
+    "acuity": {
+     "ESI 1: resuscitation, immediate life-saving intervention": 4894,
+     "ESI 2: emergent, high risk": 27670,
+     "ESI 3: urgent, two or more resources expected": 45088,
+     "ESI 4: less urgent, one resource expected": 5777,
+     "ESI 5: non-urgent, no resources expected": 219
+    }
+   },
+   "n_groups": 40226,
+   "n_records": 83648,
+   "sex": {
+    "f": 45542,
+    "m": 38106
+   }
+  },
+  "train": {
+   "age": {
+    "max": 91.0,
+    "median": 53.0,
+    "min": 18.0,
+    "missing": 0,
+    "n": 292688,
+    "q1": 35.0,
+    "q3": 69.0
+   },
+   "labels": {
+    "acuity": {
+     "ESI 1: resuscitation, immediate life-saving intervention": 16676,
+     "ESI 2: emergent, high risk": 97762,
+     "ESI 3: urgent, two or more resources expected": 157593,
+     "ESI 4: less urgent, one resource expected": 19895,
+     "ESI 5: non-urgent, no resources expected": 762
+    }
+   },
+   "n_groups": 140873,
+   "n_records": 292688,
+   "sex": {
+    "f": 158845,
+    "m": 133843
+   }
+  }
+ }
+}

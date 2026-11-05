@@ -1,0 +1,350 @@
+{
+  "task": "p1",
+  "kev_type": "noul",
+  "seed": 20260925,
+  "variant": "main",
+  "extracted_at": null,
+  "source": "data/public/physionet",
+  "consort": {
+    "studies_in_split_file": 227835,
+    "studies_with_report": 227835,
+    "dropped_missing_report": 0,
+    "dropped_no_chexpert_row": 8,
+    "dropped_all_uncertain": 0,
+    "dropped_empty_report": 0,
+    "unexpected_chexpert_values": 0,
+    "subjects_overlapping_splits": 0,
+    "n_train": 222750,
+    "n_dev": 1808,
+    "n_test": 3269
+  },
+  "git_commit": "2120a784dec1d96acc415d31f8c5816ba35f578e",
+  "splits": {
+    "train": {
+      "n": 222750,
+      "questions": {
+        "cardiomegaly": {
+          "type": "noul",
+          "labels": {
+            "True": 43602,
+            "False": 173279
+          }
+        },
+        "consolidation": {
+          "type": "noul",
+          "labels": {
+            "False": 208088,
+            "True": 10476
+          }
+        },
+        "edema": {
+          "type": "noul",
+          "labels": {
+            "False": 183880,
+            "True": 26093
+          }
+        },
+        "enlarged_cardiomediastinum": {
+          "type": "noul",
+          "labels": {
+            "False": 206699,
+            "True": 6968
+          }
+        },
+        "fracture": {
+          "type": "noul",
+          "labels": {
+            "False": 217919,
+            "True": 4283
+          }
+        },
+        "lung_lesion": {
+          "type": "noul",
+          "labels": {
+            "False": 215545,
+            "True": 6091
+          }
+        },
+        "lung_opacity": {
+          "type": "noul",
+          "labels": {
+            "True": 50099,
+            "False": 168925
+          }
+        },
+        "pleural_effusion": {
+          "type": "noul",
+          "labels": {
+            "False": 164352,
+            "True": 52759
+          }
+        },
+        "pneumothorax": {
+          "type": "noul",
+          "labels": {
+            "False": 211473,
+            "True": 10171
+          }
+        },
+        "pleural_other": {
+          "type": "noul",
+          "labels": {
+            "False": 220074,
+            "True": 1933
+          }
+        },
+        "support_devices": {
+          "type": "noul",
+          "labels": {
+            "False": 157652,
+            "True": 64868
+          }
+        },
+        "no_finding": {
+          "type": "noul",
+          "labels": {
+            "False": 148445,
+            "True": 74305
+          }
+        },
+        "atelectasis": {
+          "type": "noul",
+          "labels": {
+            "False": 167991,
+            "True": 44718
+          }
+        },
+        "pneumonia": {
+          "type": "noul",
+          "labels": {
+            "False": 188860,
+            "True": 16093
+          }
+        }
+      }
+    },
+    "dev": {
+      "n": 1808,
+      "questions": {
+        "atelectasis": {
+          "type": "noul",
+          "labels": {
+            "False": 1354,
+            "True": 359
+          }
+        },
+        "cardiomegaly": {
+          "type": "noul",
+          "labels": {
+            "False": 1372,
+            "True": 377
+          }
+        },
+        "consolidation": {
+          "type": "noul",
+          "labels": {
+            "False": 1678,
+            "True": 82
+          }
+        },
+        "edema": {
+          "type": "noul",
+          "labels": {
+            "False": 1458,
+            "True": 242
+          }
+        },
+        "enlarged_cardiomediastinum": {
+          "type": "noul",
+          "labels": {
+            "False": 1660,
+            "True": 60
+          }
+        },
+        "fracture": {
+          "type": "noul",
+          "labels": {
+            "False": 1787,
+            "True": 18
+          }
+        },
+        "lung_lesion": {
+          "type": "noul",
+          "labels": {
+            "False": 1729,
+            "True": 70
+          }
+        },
+        "lung_opacity": {
+          "type": "noul",
+          "labels": {
+            "True": 388,
+            "False": 1394
+          }
+        },
+        "pleural_effusion": {
+          "type": "noul",
+          "labels": {
+            "False": 1296,
+            "True": 467
+          }
+        },
+        "pneumonia": {
+          "type": "noul",
+          "labels": {
+            "False": 1536,
+            "True": 128
+          }
+        },
+        "pneumothorax": {
+          "type": "noul",
+          "labels": {
+            "False": 1724,
+            "True": 75
+          }
+        },
+        "pleural_other": {
+          "type": "noul",
+          "labels": {
+            "False": 1787,
+            "True": 15
+          }
+        },
+        "support_devices": {
+          "type": "noul",
+          "labels": {
+            "False": 1240,
+            "True": 565
+          }
+        },
+        "no_finding": {
+          "type": "noul",
+          "labels": {
+            "False": 1226,
+            "True": 582
+          }
+        }
+      }
+    },
+    "test": {
+      "n": 3269,
+      "questions": {
+        "atelectasis": {
+          "type": "noul",
+          "labels": {
+            "True": 731,
+            "False": 2347
+          }
+        },
+        "cardiomegaly": {
+          "type": "noul",
+          "labels": {
+            "False": 2288,
+            "True": 866
+          }
+        },
+        "consolidation": {
+          "type": "noul",
+          "labels": {
+            "False": 2952,
+            "True": 220
+          }
+        },
+        "edema": {
+          "type": "noul",
+          "labels": {
+            "True": 683,
+            "False": 2297
+          }
+        },
+        "fracture": {
+          "type": "noul",
+          "labels": {
+            "False": 3176,
+            "True": 89
+          }
+        },
+        "lung_lesion": {
+          "type": "noul",
+          "labels": {
+            "False": 3128,
+            "True": 123
+          }
+        },
+        "lung_opacity": {
+          "type": "noul",
+          "labels": {
+            "False": 2152,
+            "True": 1038
+          }
+        },
+        "pleural_effusion": {
+          "type": "noul",
+          "labels": {
+            "False": 2065,
+            "True": 1074
+          }
+        },
+        "pneumonia": {
+          "type": "noul",
+          "labels": {
+            "False": 2584,
+            "True": 335
+          }
+        },
+        "pneumothorax": {
+          "type": "noul",
+          "labels": {
+            "False": 3138,
+            "True": 112
+          }
+        },
+        "pleural_other": {
+          "type": "noul",
+          "labels": {
+            "False": 3190,
+            "True": 63
+          }
+        },
+        "support_devices": {
+          "type": "noul",
+          "labels": {
+            "True": 1125,
+            "False": 2140
+          }
+        },
+        "no_finding": {
+          "type": "noul",
+          "labels": {
+            "False": 2701,
+            "True": 568
+          }
+        },
+        "enlarged_cardiomediastinum": {
+          "type": "noul",
+          "labels": {
+            "False": 2914,
+            "True": 151
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 222750,
+      "sha256": "f077ad8fc472b4fc4d86a4916151771ed28223746a81d7b09805e687a739b548",
+      "bytes": 541179732
+    },
+    "dev.jsonl": {
+      "records": 1808,
+      "sha256": "2c2c53463445870d3ae282c25f78ef5a3aad5d4174d5e5d0bd6ea5b25998ed85",
+      "bytes": 4390269
+    },
+    "test.jsonl": {
+      "records": 3269,
+      "sha256": "8fc7aae86fc875ed3e128c15b07242a26fab7c35dea9e9a3488af4eebf05905f",
+      "bytes": 8094165
+    }
+  }
+}

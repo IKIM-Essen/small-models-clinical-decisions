@@ -1,0 +1,9 @@
+{"pairID": "train-000", "sentence1": "SYNTHETIC premise train 0.", "sentence2": "SYNTHETIC hypothesis train 0.", "gold_label": "entailment", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-001", "sentence1": "SYNTHETIC premise train 1.", "sentence2": "SYNTHETIC hypothesis train 1.", "gold_label": "contradiction", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-002", "sentence1": "SYNTHETIC premise train 2.", "sentence2": "SYNTHETIC hypothesis train 2.", "gold_label": "neutral", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-003", "sentence1": "SYNTHETIC premise train 3.", "sentence2": "SYNTHETIC hypothesis train 3.", "gold_label": "entailment", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-004", "sentence1": "SYNTHETIC premise train 4.", "sentence2": "SYNTHETIC hypothesis train 4.", "gold_label": "contradiction", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-005", "sentence1": "SYNTHETIC premise train 5.", "sentence2": "SYNTHETIC hypothesis train 5.", "gold_label": "neutral", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-006", "sentence1": "SYNTHETIC premise train 6.", "sentence2": "SYNTHETIC hypothesis train 6.", "gold_label": "entailment", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-007", "sentence1": "SYNTHETIC premise train 7.", "sentence2": "SYNTHETIC hypothesis train 7.", "gold_label": "contradiction", "sentence1_parse": "", "sentence2_parse": ""}
+{"pairID": "train-008", "sentence1": "SYNTHETIC premise train 8.", "sentence2": "SYNTHETIC hypothesis train 8.", "gold_label": "unknown", "sentence1_parse": "", "sentence2_parse": ""}

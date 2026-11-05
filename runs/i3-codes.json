@@ -1,0 +1,17 @@
+{
+ "train": {
+  "n_records": 49466,
+  "with_code": 11794,
+  "label_agrees": 11623
+ },
+ "dev": {
+  "n_records": 9580,
+  "with_code": 2573,
+  "label_agrees": 2518
+ },
+ "test": {
+  "n_records": 6839,
+  "with_code": 1895,
+  "label_agrees": 1865
+ }
+}

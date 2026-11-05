@@ -1,0 +1,21 @@
+{
+ "source": "splits/i3/train.jsonl",
+ "source_sha256": "b61f1441694fcf4576dd814de6ddd9dc8e4b905f6adc132b682fe1cdc71dbece",
+ "out": "data/derived/i3-3k/train.jsonl",
+ "out_sha256": "b7a2708830c5958cf99de5f5920a73732c234e94d77e3ee12736a1ebbfe933e6",
+ "n_requested": 3000,
+ "n_records": 3000,
+ "n_groups": 1738,
+ "n_source_records": 49466,
+ "seed": 20261017,
+ "labels": {
+  "malignant": {
+   "False": 368,
+   "True": 2632
+  },
+  "metastatic": {
+   "False": 1924,
+   "True": 658
+  }
+ }
+}

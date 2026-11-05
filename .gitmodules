@@ -1,0 +1,6 @@
+[submodule "third_party/kev"]
+	path = third_party/kev
+	url = https://github.com/jaredpalmer/kev
+[submodule "third_party/laya"]
+	path = third_party/laya
+	url = https://github.com/NandhaKishorM/laya

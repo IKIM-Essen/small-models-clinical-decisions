@@ -1,0 +1,349 @@
+{
+ "note": "Sensitivity analysis: every I3 test row restricted to the code-free, unseen-patient test records of\ndata/derived/i3-3k-nocode (the records scored by the retrained models), plus the retrained Kev-4B, LoRA-SFT and classical\nrows on them. Accuracy, macro-F1 and automation at 5% (local rows at their dev-fitted temperature; frontier rows raw,\nthinking rows accuracy and macro-F1 only). Output: runs/i3-nocode-rows.json (aggregates only).",
+ "n_records_nocode": 4905,
+ "n_decisions_nocode": 9262,
+ "rows": {
+  "classical-3k/i3/s0": {
+   "restricted": {
+    "accuracy": 0.8819909306845174,
+    "macro_f1": 0.6381236653903464,
+    "n": 9262,
+    "automation_at_5pct": 0.8020945800043188
+   },
+   "full": {
+    "accuracy": 0.8906754946007724,
+    "macro_f1": 0.7525919071693197,
+    "n": 12687,
+    "automation_at_5pct": 0.8373926066051864
+   }
+  },
+  "classical-3k/i3/s1": {
+   "restricted": {
+    "accuracy": 0.8819909306845174,
+    "macro_f1": 0.6381236653903464,
+    "n": 9262,
+    "automation_at_5pct": 0.8020945800043188
+   },
+   "full": {
+    "accuracy": 0.8906754946007724,
+    "macro_f1": 0.7525919071693197,
+    "n": 12687,
+    "automation_at_5pct": 0.8373926066051864
+   }
+  },
+  "classical-3k/i3/s2": {
+   "restricted": {
+    "accuracy": 0.8819909306845174,
+    "macro_f1": 0.6381236653903464,
+    "n": 9262,
+    "automation_at_5pct": 0.8020945800043188
+   },
+   "full": {
+    "accuracy": 0.8906754946007724,
+    "macro_f1": 0.7525919071693197,
+    "n": 12687,
+    "automation_at_5pct": 0.8373926066051864
+   }
+  },
+  "kev4b-3k/i3/s0": {
+   "restricted": {
+    "accuracy": 0.9538976462966962,
+    "macro_f1": 0.9112436454289109,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.962451684152402,
+    "macro_f1": 0.9364736597582801,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "kev4b-3k/i3/s1": {
+   "restricted": {
+    "accuracy": 0.9553012308356726,
+    "macro_f1": 0.9155512436552612,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9636349293997002,
+    "macro_f1": 0.9388833273218664,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "kev4b-3k/i3/s2": {
+   "restricted": {
+    "accuracy": 0.9558410710429713,
+    "macro_f1": 0.9158970465982679,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9631616313007809,
+    "macro_f1": 0.9374043169907893,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "kev4b-full/i3/s0": {
+   "restricted": {
+    "accuracy": 0.9687972360181386,
+    "macro_f1": 0.9466198561476418,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9762562120375483,
+    "macro_f1": 0.9617525763820047,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "kev4b-full/i3/s1": {
+   "restricted": {
+    "accuracy": 0.969445044266897,
+    "macro_f1": 0.9490099672825648,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9765717441034946,
+    "macro_f1": 0.9627905114567146,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "kev4b-full/i3/s2": {
+   "restricted": {
+    "accuracy": 0.9689052040595983,
+    "macro_f1": 0.9465820110283796,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9762562120375483,
+    "macro_f1": 0.9618070568852091,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "kev4b-zeroshot/i3/s0": {
+   "restricted": {
+    "accuracy": 0.9183761606564457,
+    "macro_f1": 0.8230725975254461,
+    "n": 9262,
+    "automation_at_5pct": 0.8932196069963291
+   },
+   "full": {
+    "accuracy": 0.9172517157056086,
+    "macro_f1": 0.8370530887039488,
+    "n": 12677,
+    "automation_at_5pct": 0.8910625542320738
+   }
+  },
+  "qwen4b-zeroshot-k0/i3/s0": {
+   "restricted": {
+    "accuracy": 0.9126538544590801,
+    "macro_f1": 0.8152999499031056,
+    "n": 9262,
+    "automation_at_5pct": 0.8716259987043835
+   },
+   "full": {
+    "accuracy": 0.9105466593042518,
+    "macro_f1": 0.8266417210593847,
+    "n": 12677,
+    "automation_at_5pct": 0.8655044568904315
+   }
+  },
+  "sft4b-3k/i3/s0": {
+   "restricted": {
+    "accuracy": 0.96426257827683,
+    "macro_f1": 0.9396355212485354,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.971049932949436,
+    "macro_f1": 0.9538436297405272,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "sft4b-3k/i3/s1": {
+   "restricted": {
+    "accuracy": 0.963074929820773,
+    "macro_f1": 0.9388992100271215,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9700244537351108,
+    "macro_f1": 0.9525169234525948,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "sft4b-3k/i3/s2": {
+   "restricted": {
+    "accuracy": 0.9614554091988772,
+    "macro_f1": 0.9372612525892674,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9686834424548395,
+    "macro_f1": 0.9509008955606957,
+    "n": 12677,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "deepseek-v4.1-flash/nothink-k0": {
+   "restricted": {
+    "accuracy": 0.9285251565536601,
+    "macro_f1": 0.8352486257262932,
+    "n": 9262,
+    "automation_at_5pct": 0.9421291297775858
+   },
+   "full": {
+    "accuracy": 0.9233073224560574,
+    "macro_f1": 0.8415013760199206,
+    "n": 12687,
+    "automation_at_5pct": 0.9118783006226846
+   }
+  },
+  "deepseek-v4.1-flash/nothink-k3": {
+   "restricted": {
+    "accuracy": 0.9331677823364284,
+    "macro_f1": 0.8441617685364916,
+    "n": 9262,
+    "automation_at_5pct": 0.9495789246383071
+   },
+   "full": {
+    "accuracy": 0.9270907227871049,
+    "macro_f1": 0.8487799818755162,
+    "n": 12687,
+    "automation_at_5pct": 0.9229920390951367
+   }
+  },
+  "deepseek-v4.1-flash/think-k0": {
+   "restricted": {
+    "accuracy": 0.9394299287410927,
+    "macro_f1": 0.8507483434236363,
+    "n": 9262
+   },
+   "full": {
+    "accuracy": 0.935682194372192,
+    "macro_f1": 0.868104372286453,
+    "n": 12687
+   }
+  },
+  "deepseek-v4.1-flash/think-k3": {
+   "restricted": {
+    "accuracy": 0.9364068235802202,
+    "macro_f1": 0.848887927463343,
+    "n": 9262
+   },
+   "full": {
+    "accuracy": 0.9326081816032159,
+    "macro_f1": 0.863562547438724,
+    "n": 12687
+   }
+  },
+  "kimi-k3/nothink-k0": {
+   "restricted": {
+    "accuracy": 0.9307924854243144,
+    "macro_f1": 0.827314185451354,
+    "n": 9262,
+    "automation_at_5pct": 0.9517382854675016
+   },
+   "full": {
+    "accuracy": 0.9263813352250335,
+    "macro_f1": 0.8414156160970201,
+    "n": 12687,
+    "automation_at_5pct": 0.9367068652951841
+   }
+  },
+  "kimi-k3/nothink-k3": {
+   "restricted": {
+    "accuracy": 0.9335996545022673,
+    "macro_f1": 0.8337993394561153,
+    "n": 9262,
+    "automation_at_5pct": 0.9518462535089613
+   },
+   "full": {
+    "accuracy": 0.9278789311894065,
+    "macro_f1": 0.8466861760949217,
+    "n": 12687,
+    "automation_at_5pct": 0.9101442421376212
+   }
+  },
+  "kimi-k3/think-k0": {
+   "restricted": {
+    "accuracy": 0.9415892895702872,
+    "macro_f1": 0.8487658115805679,
+    "n": 9262
+   },
+   "full": {
+    "accuracy": 0.9342634192480492,
+    "macro_f1": 0.856333076605398,
+    "n": 12687
+   }
+  },
+  "kimi-k3/think-k3": {
+   "restricted": {
+    "accuracy": 0.9365147916216799,
+    "macro_f1": 0.8379489053731624,
+    "n": 9262
+   },
+   "full": {
+    "accuracy": 0.9296129896744699,
+    "macro_f1": 0.8487212045830588,
+    "n": 12687
+   }
+  },
+  "kev4b-3k-nocode/s0": {
+   "restricted": {
+    "accuracy": 0.9565968473331894,
+    "macro_f1": 0.921131252270814,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9565968473331894,
+    "macro_f1": 0.921131252270814,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "sft4b-3k-nocode/s0": {
+   "restricted": {
+    "accuracy": 0.9645864824012093,
+    "macro_f1": 0.9410281560134958,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   },
+   "full": {
+    "accuracy": 0.9645864824012093,
+    "macro_f1": 0.9410281560134958,
+    "n": 9262,
+    "automation_at_5pct": 1.0
+   }
+  },
+  "classical-3k-nocode/s0": {
+   "restricted": {
+    "accuracy": 0.8772403368602893,
+    "macro_f1": 0.6235096747833573,
+    "n": 9262,
+    "automation_at_5pct": 0.7912977758583459
+   },
+   "full": {
+    "accuracy": 0.8770774875890351,
+    "macro_f1": 0.6232826730919501,
+    "n": 9266,
+    "automation_at_5pct": 0.7911720267645155
+   }
+  }
+ }
+}

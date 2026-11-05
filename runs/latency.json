@@ -1,0 +1,450 @@
+{
+ "note": "H1 latency part (2026-10-26 re-measurement): p50 latency per decision.",
+ "gpu_product": "NVIDIA-A100-SXM4-80GB",
+ "measurement": {
+  "kev": "A100-SXM4, fp32, batch 1, 500 dev records per task",
+  "sft": "LoRA-SFT 3k seed 0, same records and conditions as Kev",
+  "frontier": "quiet gateway load, one request in flight per model, 2026-10-26 08:30-10:50 Berlin, same 500 dev records",
+  "frontier_under_load": "per call from the 48 test-run ledgers, up to 160 requests in flight from this project (not used for H1)"
+ },
+ "kev": {
+  "p1": {
+   "p50_ms": 70.5416058190167,
+   "p95_ms": 116.03943832839528,
+   "n_records": 500
+  },
+  "p2": {
+   "p50_ms": 58.883161284029484,
+   "p95_ms": 84.7438883036375,
+   "n_records": 500
+  },
+  "p3": {
+   "p50_ms": 112.28109989315271,
+   "p95_ms": 116.19193963706493,
+   "n_records": 500
+  },
+  "i1": {
+   "p50_ms": 397.59979769587517,
+   "p95_ms": 619.6975992061198,
+   "n_records": 500
+  },
+  "i2": {
+   "p50_ms": 1963.2650250568986,
+   "p95_ms": 3857.399218622595,
+   "n_records": 500
+  },
+  "i3": {
+   "p50_ms": 222.06598287448287,
+   "p95_ms": 698.7022281158714,
+   "n_records": 500
+  }
+ },
+ "sft": {
+  "p1": {
+   "p50_ms": 101.63229106730977,
+   "p95_ms": 146.5666647845258,
+   "n_records": 500
+  },
+  "p2": {
+   "p50_ms": 93.65337807685137,
+   "p95_ms": 126.0496301576495,
+   "n_records": 500
+  },
+  "p3": {
+   "p50_ms": 162.7364680171013,
+   "p95_ms": 163.7996301986277,
+   "n_records": 500
+  },
+  "i1": {
+   "p50_ms": 450.5849899724126,
+   "p95_ms": 694.5250718854368,
+   "n_records": 500
+  },
+  "i2": {
+   "p50_ms": 2051.052254624665,
+   "p95_ms": 4062.2679165564477,
+   "n_records": 500
+  },
+  "i3": {
+   "p50_ms": 266.9942849315703,
+   "p95_ms": 726.4845183119177,
+   "n_records": 500
+  }
+ },
+ "frontier": {
+  "deepseek-v4.1-flash/nothink-k0/p1": {
+   "p50_ms": 113.34228515625,
+   "p95_ms": 216.52038097381592,
+   "n_calls": 6815
+  },
+  "deepseek-v4.1-flash/nothink-k0/p2": {
+   "p50_ms": 91.10748767852783,
+   "p95_ms": 195.61995267868036,
+   "n_calls": 500
+  },
+  "deepseek-v4.1-flash/nothink-k0/p3": {
+   "p50_ms": 98.22940826416016,
+   "p95_ms": 190.84839820861745,
+   "n_calls": 500
+  },
+  "deepseek-v4.1-flash/nothink-k0/i1": {
+   "p50_ms": 202.02243328094482,
+   "p95_ms": 399.1540312767029,
+   "n_calls": 500
+  },
+  "deepseek-v4.1-flash/nothink-k0/i2": {
+   "p50_ms": 565.5492544174194,
+   "p95_ms": 1516.9491291046138,
+   "n_calls": 500
+  },
+  "deepseek-v4.1-flash/nothink-k0/i3": {
+   "p50_ms": 121.24419212341309,
+   "p95_ms": 304.7303676605224,
+   "n_calls": 915
+  },
+  "kimi-k3/nothink-k0/p1": {
+   "p50_ms": 468.7848091125488,
+   "p95_ms": 977.153873443603,
+   "n_calls": 6815
+  },
+  "kimi-k3/nothink-k0/p2": {
+   "p50_ms": 458.0345153808594,
+   "p95_ms": 857.6095581054683,
+   "n_calls": 500
+  },
+  "kimi-k3/nothink-k0/p3": {
+   "p50_ms": 446.86174392700195,
+   "p95_ms": 846.6606497764586,
+   "n_calls": 500
+  },
+  "kimi-k3/nothink-k0/i1": {
+   "p50_ms": 478.5351753234863,
+   "p95_ms": 1044.7480201721185,
+   "n_calls": 500
+  },
+  "kimi-k3/nothink-k0/i2": {
+   "p50_ms": 591.3349390029907,
+   "p95_ms": 989.6733283996576,
+   "n_calls": 500
+  },
+  "kimi-k3/nothink-k0/i3": {
+   "p50_ms": 465.17038345336914,
+   "p95_ms": 1006.0027122497553,
+   "n_calls": 915
+  }
+ },
+ "frontier_under_load": {
+  "deepseek-v4.1-flash/nothink-k0/p1": {
+   "p50_ms": 651.4803171157837,
+   "p95_ms": 7392.1133041381645,
+   "n_calls": 44250
+  },
+  "deepseek-v4.1-flash/nothink-k0/p2": {
+   "p50_ms": 395.4024314880371,
+   "p95_ms": 4621.587014198308,
+   "n_calls": 1422
+  },
+  "deepseek-v4.1-flash/nothink-k0/p3": {
+   "p50_ms": 791.6617393493652,
+   "p95_ms": 2135.0498676300044,
+   "n_calls": 83633
+  },
+  "deepseek-v4.1-flash/nothink-k0/i1": {
+   "p50_ms": 2098.8787412643433,
+   "p95_ms": 5319.631481170653,
+   "n_calls": 39474
+  },
+  "deepseek-v4.1-flash/nothink-k0/i2": {
+   "p50_ms": 11434.952139854431,
+   "p95_ms": 23389.204585552212,
+   "n_calls": 2000
+  },
+  "deepseek-v4.1-flash/nothink-k0/i3": {
+   "p50_ms": 1083.9283466339111,
+   "p95_ms": 3928.1772851943397,
+   "n_calls": 12687
+  },
+  "deepseek-v4.1-flash/nothink-k3/p1": {
+   "p50_ms": 687.4037981033325,
+   "p95_ms": 6759.737372398348,
+   "n_calls": 44250
+  },
+  "deepseek-v4.1-flash/nothink-k3/p2": {
+   "p50_ms": 477.5576591491699,
+   "p95_ms": 4517.468762397767,
+   "n_calls": 1422
+  },
+  "deepseek-v4.1-flash/nothink-k3/p3": {
+   "p50_ms": 787.7392768859863,
+   "p95_ms": 2050.479698181152,
+   "n_calls": 83633
+  },
+  "deepseek-v4.1-flash/nothink-k3/i1": {
+   "p50_ms": 2098.7086296081543,
+   "p95_ms": 5378.622436523438,
+   "n_calls": 39473
+  },
+  "deepseek-v4.1-flash/nothink-k3/i2": {
+   "p50_ms": 11669.492244720459,
+   "p95_ms": 23473.21491241455,
+   "n_calls": 2000
+  },
+  "deepseek-v4.1-flash/nothink-k3/i3": {
+   "p50_ms": 1214.3933773040771,
+   "p95_ms": 4639.167857170101,
+   "n_calls": 12687
+  },
+  "deepseek-v4.1-flash/think-k0/p1": {
+   "p50_ms": 1948.4039545059204,
+   "p95_ms": 20718.025732040343,
+   "n_calls": 44250
+  },
+  "deepseek-v4.1-flash/think-k0/p2": {
+   "p50_ms": 6840.943098068237,
+   "p95_ms": 64715.99167585373,
+   "n_calls": 1422
+  },
+  "deepseek-v4.1-flash/think-k0/p3": {
+   "p50_ms": 13503.013849258423,
+   "p95_ms": 102226.03070735931,
+   "n_calls": 83616
+  },
+  "deepseek-v4.1-flash/think-k0/i1": {
+   "p50_ms": 56106.89878463745,
+   "p95_ms": 212354.25982475275,
+   "n_calls": 39329
+  },
+  "deepseek-v4.1-flash/think-k0/i2": {
+   "p50_ms": 17796.544313430786,
+   "p95_ms": 136558.23812484712,
+   "n_calls": 1977
+  },
+  "deepseek-v4.1-flash/think-k0/i3": {
+   "p50_ms": 9298.330068588257,
+   "p95_ms": 83568.80612373352,
+   "n_calls": 12685
+  },
+  "deepseek-v4.1-flash/think-k3/p1": {
+   "p50_ms": 2343.125581741333,
+   "p95_ms": 41433.88504981994,
+   "n_calls": 44249
+  },
+  "deepseek-v4.1-flash/think-k3/p2": {
+   "p50_ms": 7337.912321090698,
+   "p95_ms": 92814.18347358704,
+   "n_calls": 1421
+  },
+  "deepseek-v4.1-flash/think-k3/p3": {
+   "p50_ms": 8158.843040466309,
+   "p95_ms": 120868.80855560293,
+   "n_calls": 83628
+  },
+  "deepseek-v4.1-flash/think-k3/i1": {
+   "p50_ms": 30444.093227386475,
+   "p95_ms": 121343.42218637465,
+   "n_calls": 39274
+  },
+  "deepseek-v4.1-flash/think-k3/i2": {
+   "p50_ms": 13482.0556640625,
+   "p95_ms": 125007.91363716118,
+   "n_calls": 1997
+  },
+  "deepseek-v4.1-flash/think-k3/i3": {
+   "p50_ms": 8472.488760948181,
+   "p95_ms": 83398.74895811071,
+   "n_calls": 12684
+  },
+  "kimi-k3/nothink-k0/p1": {
+   "p50_ms": 12215.84951877594,
+   "p95_ms": 22032.004058361043,
+   "n_calls": 44250
+  },
+  "kimi-k3/nothink-k0/p2": {
+   "p50_ms": 9881.21473789215,
+   "p95_ms": 18075.465285778046,
+   "n_calls": 1422
+  },
+  "kimi-k3/nothink-k0/p3": {
+   "p50_ms": 13831.115245819092,
+   "p95_ms": 24317.386054992665,
+   "n_calls": 83633
+  },
+  "kimi-k3/nothink-k0/i1": {
+   "p50_ms": 12158.207654953003,
+   "p95_ms": 16663.298141956326,
+   "n_calls": 39474
+  },
+  "kimi-k3/nothink-k0/i2": {
+   "p50_ms": 16604.48443889618,
+   "p95_ms": 26947.710454463937,
+   "n_calls": 2000
+  },
+  "kimi-k3/nothink-k0/i3": {
+   "p50_ms": 8843.321800231934,
+   "p95_ms": 20123.64592552184,
+   "n_calls": 12687
+  },
+  "kimi-k3/nothink-k3/p1": {
+   "p50_ms": 12089.569449424744,
+   "p95_ms": 19937.929606437676,
+   "n_calls": 44250
+  },
+  "kimi-k3/nothink-k3/p2": {
+   "p50_ms": 9902.656555175781,
+   "p95_ms": 17810.768449306488,
+   "n_calls": 1422
+  },
+  "kimi-k3/nothink-k3/p3": {
+   "p50_ms": 13899.043321609497,
+   "p95_ms": 24386.324214935295,
+   "n_calls": 83633
+  },
+  "kimi-k3/nothink-k3/i1": {
+   "p50_ms": 12099.420070648193,
+   "p95_ms": 16623.720347881314,
+   "n_calls": 39474
+  },
+  "kimi-k3/nothink-k3/i2": {
+   "p50_ms": 16768.738508224487,
+   "p95_ms": 27376.65903568268,
+   "n_calls": 2000
+  },
+  "kimi-k3/nothink-k3/i3": {
+   "p50_ms": 10686.812400817871,
+   "p95_ms": 28001.19783878326,
+   "n_calls": 12687
+  },
+  "kimi-k3/think-k0/p1": {
+   "p50_ms": 20598.29306602478,
+   "p95_ms": 45545.379352569464,
+   "n_calls": 44250
+  },
+  "kimi-k3/think-k0/p2": {
+   "p50_ms": 21921.00214958191,
+   "p95_ms": 55848.15921783449,
+   "n_calls": 1422
+  },
+  "kimi-k3/think-k0/p3": {
+   "p50_ms": 61744.24958229065,
+   "p95_ms": 123576.29270553587,
+   "n_calls": 83629
+  },
+  "kimi-k3/think-k0/i1": {
+   "p50_ms": 46770.9219455719,
+   "p95_ms": 182549.24027919763,
+   "n_calls": 39444
+  },
+  "kimi-k3/think-k0/i2": {
+   "p50_ms": 29807.533740997314,
+   "p95_ms": 100679.19408082955,
+   "n_calls": 2000
+  },
+  "kimi-k3/think-k0/i3": {
+   "p50_ms": 21422.68943786621,
+   "p95_ms": 52359.70115661615,
+   "n_calls": 12687
+  },
+  "kimi-k3/think-k3/p1": {
+   "p50_ms": 14281.105279922485,
+   "p95_ms": 39861.240196228006,
+   "n_calls": 44249
+  },
+  "kimi-k3/think-k3/p2": {
+   "p50_ms": 10701.344013214111,
+   "p95_ms": 18569.81236934662,
+   "n_calls": 1422
+  },
+  "kimi-k3/think-k3/p3": {
+   "p50_ms": 14132.261037826538,
+   "p95_ms": 24829.70919609069,
+   "n_calls": 83633
+  },
+  "kimi-k3/think-k3/i1": {
+   "p50_ms": 11535.676956176758,
+   "p95_ms": 15490.850925445557,
+   "n_calls": 39474
+  },
+  "kimi-k3/think-k3/i2": {
+   "p50_ms": 26046.40805721283,
+   "p95_ms": 83157.59969949722,
+   "n_calls": 2000
+  },
+  "kimi-k3/think-k3/i3": {
+   "p50_ms": 12164.995193481445,
+   "p95_ms": 39330.21657466886,
+   "n_calls": 12687
+  }
+ },
+ "speedup_p50": {
+  "deepseek-v4.1-flash/nothink-k0/p1": 1.6067437626390841,
+  "deepseek-v4.1-flash/nothink-k0/p2": 1.5472587696007136,
+  "deepseek-v4.1-flash/nothink-k0/p3": 0.8748525651925015,
+  "deepseek-v4.1-flash/nothink-k0/i1": 0.5081049700017004,
+  "deepseek-v4.1-flash/nothink-k0/i2": 0.28806566978955317,
+  "deepseek-v4.1-flash/nothink-k0/i3": 0.5459827324923658,
+  "kimi-k3/nothink-k0/p1": 6.645508046914538,
+  "kimi-k3/nothink-k0/p2": 7.7787011667304835,
+  "kimi-k3/nothink-k0/p3": 3.979848294612699,
+  "kimi-k3/nothink-k0/i1": 1.2035599064603115,
+  "kimi-k3/nothink-k0/i2": 0.30119975217602263,
+  "kimi-k3/nothink-k0/i3": 2.094739488831546
+ },
+ "speedup_under_load_p50": {
+  "deepseek-v4.1-flash/nothink-k0/p1": 9.235405255548589,
+  "deepseek-v4.1-flash/nothink-k0/p2": 6.715034024426261,
+  "deepseek-v4.1-flash/nothink-k0/p3": 7.050712364794384,
+  "deepseek-v4.1-flash/nothink-k0/i1": 5.278872759562568,
+  "deepseek-v4.1-flash/nothink-k0/i2": 5.824456705493965,
+  "deepseek-v4.1-flash/nothink-k0/i3": 4.88110935589164,
+  "deepseek-v4.1-flash/nothink-k3/p1": 9.744657640300291,
+  "deepseek-v4.1-flash/nothink-k3/p2": 8.110258497257261,
+  "deepseek-v4.1-flash/nothink-k3/p3": 7.015778057354294,
+  "deepseek-v4.1-flash/nothink-k3/i1": 5.278444913127095,
+  "deepseek-v4.1-flash/nothink-k3/i2": 5.94392101717508,
+  "deepseek-v4.1-flash/nothink-k3/i3": 5.468615055690371,
+  "deepseek-v4.1-flash/think-k0/p1": 27.620635111494263,
+  "deepseek-v4.1-flash/think-k0/p2": 116.17825790755674,
+  "deepseek-v4.1-flash/think-k0/p3": 120.26079065940716,
+  "deepseek-v4.1-flash/think-k0/i1": 141.11400234552866,
+  "deepseek-v4.1-flash/think-k0/i2": 9.064769191268516,
+  "deepseek-v4.1-flash/think-k0/i3": 41.87192449842217,
+  "deepseek-v4.1-flash/think-k3/p1": 33.21622118658476,
+  "deepseek-v4.1-flash/think-k3/p2": 124.61817879810259,
+  "deepseek-v4.1-flash/think-k3/p3": 72.66443816662205,
+  "deepseek-v4.1-flash/think-k3/i1": 76.56968993398034,
+  "deepseek-v4.1-flash/think-k3/i2": 6.8671603130462575,
+  "deepseek-v4.1-flash/think-k3/i3": 38.15302394035307,
+  "kimi-k3/nothink-k0/p1": 173.17226304880595,
+  "kimi-k3/nothink-k0/p2": 167.81053398660123,
+  "kimi-k3/nothink-k0/p3": 123.18293336083147,
+  "kimi-k3/nothink-k0/i1": 30.579008654961235,
+  "kimi-k3/nothink-k0/i2": 8.457586839767064,
+  "kimi-k3/nothink-k0/i3": 39.82294670152337,
+  "kimi-k3/nothink-k3/p1": 171.38211285467537,
+  "kimi-k3/nothink-k3/p2": 168.1746757347014,
+  "kimi-k3/nothink-k3/p3": 123.78791564061895,
+  "kimi-k3/nothink-k3/i1": 30.431152482383965,
+  "kimi-k3/nothink-k3/i2": 8.541250566890989,
+  "kimi-k3/nothink-k3/i3": 48.124491029579794,
+  "kimi-k3/think-k0/p1": 292.0020437140639,
+  "kimi-k3/think-k0/p2": 372.27964109881117,
+  "kimi-k3/think-k0/p3": 549.907772911441,
+  "kimi-k3/think-k0/i1": 117.63316333814402,
+  "kimi-k3/think-k0/i2": 15.182633704857777,
+  "kimi-k3/think-k0/i3": 96.46992826440616,
+  "kimi-k3/think-k3/p1": 202.4493930087507,
+  "kimi-k3/think-k3/p2": 181.7386121916075,
+  "kimi-k3/think-k3/p3": 125.86500356048232,
+  "kimi-k3/think-k3/i1": 29.013286784920396,
+  "kimi-k3/think-k3/i2": 13.266883342180439,
+  "kimi-k3/think-k3/i3": 54.780993630876814
+ },
+ "speedup_sft_p50": {
+  "p1": 1.440742521910546,
+  "p2": 1.5904950759199878,
+  "p3": 1.4493665289346307,
+  "i1": 1.1332626238332895,
+  "i2": 1.044714915432888,
+  "i3": 1.2023196055313072
+ }
+}

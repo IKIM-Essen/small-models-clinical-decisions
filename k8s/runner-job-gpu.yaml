@@ -1,0 +1,43 @@
+# Kubernetes Job for one single-GPU run (training, scoring or a latency measurement). Fill it with envsubst:
+#   RUNNER_NAME=p1-kev4b-s0 RUNNER_CMD_B64=$(printf %s '<command>' | base64 | tr -d '\n') RUNNER_DEADLINE_S=172800 \
+#   envsubst '${RUNNER_NAME} ${RUNNER_CMD_B64} ${RUNNER_DEADLINE_S}' < k8s/runner-job-gpu.yaml | kubectl apply -f -
+# scripts/analysis/testpass_job.py and scripts/analysis/latency.py render it for the test passes and latency runs.
+# Before use, set the image, the volume claim that holds this repository and the data, and the secret with the gateway
+# key. For runs whose time is reported, pin one GPU product in the values list.
+apiVersion: batch/v1
+kind: Job
+metadata: {name: kev-gpu-${RUNNER_NAME}, labels: {app: small-models-clinical-decision, tier: gpu-runner}}
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: ${RUNNER_DEADLINE_S}
+  ttlSecondsAfterFinished: 86400
+  template:
+    metadata:
+      labels: {app: small-models-clinical-decision, tier: gpu-runner}
+    spec:
+      restartPolicy: Never
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - {key: nvidia.com/gpu.product, operator: In, values: [NVIDIA-A100-SXM4-80GB, NVIDIA-A100-80GB-PCIe]}
+      containers:
+      - name: runner
+        image: your-registry/small-models-clinical-decision:latest
+        workingDir: /workspace/small-models-clinical-decision
+        command: ["bash", "-c", "echo \"$RUNNER_CMD_B64\" | base64 -d | bash"]
+        env:
+        - {name: RUNNER_CMD_B64, value: "${RUNNER_CMD_B64}"}
+        - {name: KEV_ROOT, value: /workspace/small-models-clinical-decision}
+        - {name: HF_HUB_OFFLINE, value: "1"}   # download weights once beforehand; parallel downloads into a shared cache are not safe
+        - {name: KEV_LITELLM_KEY, valueFrom: {secretKeyRef: {name: gateway-secrets, key: litellm_key, optional: true}}}
+        resources:
+          requests: {cpu: "6", memory: 32Gi, nvidia.com/gpu: 1}
+          limits: {cpu: "12", memory: 96Gi, nvidia.com/gpu: 1}
+        volumeMounts:
+        - {mountPath: /workspace, name: workspace}
+        - {mountPath: /dev/shm, name: dshm}
+      volumes:
+      - {name: workspace, persistentVolumeClaim: {claimName: your-workspace-claim}}
+      - {name: dshm, emptyDir: {medium: Memory, sizeLimit: 16Gi}}

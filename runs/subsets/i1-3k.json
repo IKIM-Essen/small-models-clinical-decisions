@@ -1,0 +1,19 @@
+{
+ "source": "splits/i1/train.jsonl",
+ "source_sha256": "b7429061a06f2ab466512595ba18ea5194922e77ccb8ba7a90210612fee673a3",
+ "out": "data/derived/i1-3k/train.jsonl",
+ "out_sha256": "82ec8008340c7f8860ca1ce4a545efab7b6703fdf09ab473ff1f7c8a124f9393",
+ "n_requested": 3000,
+ "n_records": 3000,
+ "n_groups": 1691,
+ "n_source_records": 204380,
+ "seed": 20261017,
+ "labels": {
+  "los": {
+   "0": 88,
+   "1": 1133,
+   "2": 1019,
+   "3": 760
+  }
+ }
+}

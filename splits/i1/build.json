@@ -1,0 +1,80 @@
+{
+  "task": "i1",
+  "kev_type": "score",
+  "seed": 20260925,
+  "variant": "main",
+  "extracted_at": "2026-09-28T11:37:38+02:00",
+  "source": "data/internal/raw",
+  "consort": {
+    "cases": 333012,
+    "dropped_open": 0,
+    "dropped_invalid_period": 0,
+    "dropped_no_auf": 34827,
+    "patients_overlapping_splits": 16326,
+    "n_train": 204380,
+    "n_dev": 53496,
+    "n_test": 40309
+  },
+  "git_commit": "4af1c3ba7fe41163161ca67c09b675bb28fd106f",
+  "splits": {
+    "train": {
+      "n": 204380,
+      "questions": {
+        "los": {
+          "type": "score",
+          "labels": {
+            "1": 79731,
+            "3": 51768,
+            "2": 65780,
+            "0": 7101
+          }
+        }
+      }
+    },
+    "dev": {
+      "n": 53496,
+      "questions": {
+        "los": {
+          "type": "score",
+          "labels": {
+            "1": 21901,
+            "2": 16885,
+            "3": 12638,
+            "0": 2072
+          }
+        }
+      }
+    },
+    "test": {
+      "n": 40309,
+      "questions": {
+        "los": {
+          "type": "score",
+          "labels": {
+            "2": 12023,
+            "1": 16980,
+            "3": 8784,
+            "0": 2522
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 204380,
+      "sha256": "b7429061a06f2ab466512595ba18ea5194922e77ccb8ba7a90210612fee673a3",
+      "bytes": 518538256
+    },
+    "dev.jsonl": {
+      "records": 53496,
+      "sha256": "32ff6c9b43fd956ec708ae485bcb1f6099571dc320b1a51af2bce97735ce74f8",
+      "bytes": 142514863
+    },
+    "test.jsonl": {
+      "records": 40309,
+      "sha256": "bfef10016abbd73390102362bd57801ded70347f09179939b71469e503553459",
+      "bytes": 114801549
+    }
+  }
+}

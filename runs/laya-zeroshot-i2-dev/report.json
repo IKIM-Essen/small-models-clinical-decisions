@@ -1,0 +1,239 @@
+{
+  "objective": -3.090100157011693,
+  "paired_flip": null,
+  "unknowable": null,
+  "clean": {
+    "n": 1000,
+    "nll": 3.090100157011693,
+    "acc": 0.098,
+    "ece": 0.20547791571730165,
+    "brier": 1.00215958589087,
+    "mean_conf": 0.3016779157173016,
+    "confident_error_rate": 0.002,
+    "coverage_at_0_9": 0.002,
+    "accuracy_at_0_9": 0.0,
+    "coverage_at_5pct_error": 0.0,
+    "coverage_at_1pct_error": 0.0,
+    "aurc": 0.8753922844434493,
+    "error_rate_at_0_9": 1.0,
+    "confidence_bias": 0.20367791571730162,
+    "top_bins": {
+      "0.9": {
+        "n": 2,
+        "errors": 2,
+        "error_rate": 1.0
+      },
+      "0.95": {
+        "n": 0,
+        "errors": 0,
+        "error_rate": null
+      },
+      "0.99": {
+        "n": 0,
+        "errors": 0,
+        "error_rate": null
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.112,
+        "confidence_cutoff": 0.2648
+      },
+      "0.8": {
+        "coverage": 0.8,
+        "accuracy": 0.10375,
+        "confidence_cutoff": 0.19813962792558512
+      }
+    }
+  },
+  "tasks": {
+    "custom_choice": {
+      "n": 1000,
+      "nll": 3.090100157011693,
+      "acc": 0.098,
+      "ece": 0.20547791571730165,
+      "brier": 1.00215958589087,
+      "mean_conf": 0.3016779157173016,
+      "confident_error_rate": 0.002,
+      "coverage_at_0_9": 0.002,
+      "accuracy_at_0_9": 0.0,
+      "coverage_at_5pct_error": 0.0,
+      "coverage_at_1pct_error": 0.0,
+      "aurc": 0.8753922844434493,
+      "error_rate_at_0_9": 1.0,
+      "confidence_bias": 0.20367791571730162,
+      "top_bins": {
+        "0.9": {
+          "n": 2,
+          "errors": 2,
+          "error_rate": 1.0
+        },
+        "0.95": {
+          "n": 0,
+          "errors": 0,
+          "error_rate": null
+        },
+        "0.99": {
+          "n": 0,
+          "errors": 0,
+          "error_rate": null
+        }
+      },
+      "selective": {
+        "0.5": {
+          "coverage": 0.5,
+          "accuracy": 0.112,
+          "confidence_cutoff": 0.2648
+        },
+        "0.8": {
+          "coverage": 0.8,
+          "accuracy": 0.10375,
+          "confidence_cutoff": 0.19813962792558512
+        }
+      }
+    }
+  },
+  "variants": {
+    "clean": {
+      "n": 1000,
+      "nll": 3.090100157011693,
+      "acc": 0.098,
+      "ece": 0.20547791571730165,
+      "brier": 1.00215958589087,
+      "mean_conf": 0.3016779157173016,
+      "confident_error_rate": 0.002,
+      "coverage_at_0_9": 0.002,
+      "accuracy_at_0_9": 0.0,
+      "coverage_at_5pct_error": 0.0,
+      "coverage_at_1pct_error": 0.0,
+      "aurc": 0.8753922844434493,
+      "error_rate_at_0_9": 1.0,
+      "confidence_bias": 0.20367791571730162,
+      "top_bins": {
+        "0.9": {
+          "n": 2,
+          "errors": 2,
+          "error_rate": 1.0
+        },
+        "0.95": {
+          "n": 0,
+          "errors": 0,
+          "error_rate": null
+        },
+        "0.99": {
+          "n": 0,
+          "errors": 0,
+          "error_rate": null
+        }
+      },
+      "selective": {
+        "0.5": {
+          "coverage": 0.5,
+          "accuracy": 0.112,
+          "confidence_cutoff": 0.2648
+        },
+        "0.8": {
+          "coverage": 0.8,
+          "accuracy": 0.10375,
+          "confidence_cutoff": 0.19813962792558512
+        }
+      }
+    }
+  },
+  "heldout_tasks": {},
+  "permutation": {
+    "n": 0,
+    "mean_max_delta": null,
+    "flip_rate": null
+  },
+  "temperature": 1.0,
+  "calibrated_clean": {
+    "n": 1000,
+    "nll": 3.090100157011693,
+    "acc": 0.098,
+    "ece": 0.20547791571730165,
+    "brier": 1.00215958589087,
+    "mean_conf": 0.3016779157173016,
+    "confident_error_rate": 0.002,
+    "coverage_at_0_9": 0.002,
+    "accuracy_at_0_9": 0.0,
+    "coverage_at_5pct_error": 0.0,
+    "coverage_at_1pct_error": 0.0,
+    "aurc": 0.8753922844434493,
+    "error_rate_at_0_9": 1.0,
+    "confidence_bias": 0.20367791571730162,
+    "top_bins": {
+      "0.9": {
+        "n": 2,
+        "errors": 2,
+        "error_rate": 1.0
+      },
+      "0.95": {
+        "n": 0,
+        "errors": 0,
+        "error_rate": null
+      },
+      "0.99": {
+        "n": 0,
+        "errors": 0,
+        "error_rate": null
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.112,
+        "confidence_cutoff": 0.2648
+      },
+      "0.8": {
+        "coverage": 0.8,
+        "accuracy": 0.10375,
+        "confidence_cutoff": 0.19813962792558512
+      }
+    }
+  },
+  "metric_policy": {
+    "version": 2,
+    "selective_ties": "whole_confidence_groups",
+    "coverage_at_error": "in-sample maximum over confidence thresholds; not a deployed error guarantee",
+    "aurc": "right-step integral over whole confidence groups",
+    "confident_error_rate": "high-confidence errors divided by all questions",
+    "error_rate_at_0_9": "errors divided by questions accepted at p_max >= 0.9",
+    "nll": "exact from logits when recorded; otherwise from floored probabilities",
+    "nll_floor": 1e-09,
+    "renormalize_returned_probabilities": true,
+    "raw_sums_outside_1e_5": 738,
+    "returned_zeros": 0
+  },
+  "coverage": {
+    "requested_records": 1000,
+    "requested_questions": 1000,
+    "evaluated_records": 1000,
+    "evaluated_questions": 1000,
+    "rejected_records": 0,
+    "truncated_records": 0
+  },
+  "latency_ms": {
+    "median": 647.0752032473683,
+    "p95": 900.3529372625052
+  },
+  "calibration": {
+    "inference_temperature": null,
+    "additional_temperature": 1.0,
+    "logits_recorded": false
+  },
+  "suite_sha256": "311265c9f31eacf68689c186ad1c0d2655e0832d334511ad2587cbbd32135a8c",
+  "data": "data/derived/i2-sf7400/dev.novariant.jsonl",
+  "date_facts": false,
+  "rotations": 1,
+  "run": "http://127.0.0.1:8020",
+  "split": "custom",
+  "calibration_applied": null,
+  "remote": {
+    "base_url": "http://127.0.0.1:8020",
+    "requested_model": "multilingual",
+    "served_model": "laya-rl-agent",
+    "concurrency": 8
+  }
+}

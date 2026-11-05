@@ -1,0 +1,70 @@
+{
+ "i1": {
+  "dev_subset": 156,
+  "dev_test": 5857,
+  "n_dev": 35956,
+  "n_subset": 1691,
+  "n_test": 28463,
+  "n_train": 116105,
+  "test_subset": 102,
+  "train_dev": 10077,
+  "train_subset": 1691,
+  "train_test": 5850
+ },
+ "i2": {
+  "dev_test": 14,
+  "n_dev": 834,
+  "n_test": 1800,
+  "n_train": 2249,
+  "train_dev": 7,
+  "train_test": 20
+ },
+ "i3": {
+  "dev_subset": 63,
+  "dev_test": 666,
+  "n_dev": 6522,
+  "n_subset": 1738,
+  "n_test": 4911,
+  "n_train": 29586,
+  "test_subset": 40,
+  "train_dev": 1255,
+  "train_subset": 1738,
+  "train_test": 643
+ },
+ "p1": {
+  "dev_subset": 0,
+  "dev_test": 0,
+  "n_dev": 500,
+  "n_subset": 806,
+  "n_test": 293,
+  "n_train": 64586,
+  "test_subset": 0,
+  "train_dev": 0,
+  "train_subset": 806,
+  "train_test": 0
+ },
+ "p2": {
+  "dev_subset": 0,
+  "dev_test": 0,
+  "n_dev": 1395,
+  "n_subset": 3000,
+  "n_test": 1422,
+  "n_train": 11232,
+  "test_subset": 0,
+  "train_dev": 0,
+  "train_subset": 3000,
+  "train_test": 0
+ },
+ "p3": {
+  "dev_subset": 0,
+  "dev_test": 0,
+  "n_dev": 20115,
+  "n_subset": 1553,
+  "n_test": 40226,
+  "n_train": 140873,
+  "test_subset": 0,
+  "train_dev": 0,
+  "train_subset": 1553,
+  "train_test": 0
+ }
+}

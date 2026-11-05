@@ -1,0 +1,389 @@
+{
+ "note": "Per frontier test run: gateway calls, parse failures (first token not an option letter, or no option letter after a thinking trace at the doubled 8,192-token cap; such questions got a uniform distribution and count as errors), calls served by a fallback backend and discarded, records rejected (none). From runs/frontier-*/frontier_counts.json and report.json.",
+ "runs": {
+  "deepseek-v4.1-flash/nothink-k0/i1": {
+   "questions": 40309,
+   "calls": 39486,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 12,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k0/i2": {
+   "questions": 2000,
+   "calls": 2159,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 85,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k0/i3": {
+   "questions": 12687,
+   "calls": 12844,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 155,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k0/p1": {
+   "questions": 44250,
+   "calls": 44552,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 259,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k0/p2": {
+   "questions": 1422,
+   "calls": 1434,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 12,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k0/p3": {
+   "questions": 83648,
+   "calls": 83654,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 21,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k3/i1": {
+   "questions": 40309,
+   "calls": 39478,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 5,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k3/i2": {
+   "questions": 2000,
+   "calls": 2160,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 65,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k3/i3": {
+   "questions": 12687,
+   "calls": 12832,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 141,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k3/p1": {
+   "questions": 44250,
+   "calls": 44539,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 230,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k3/p2": {
+   "questions": 1422,
+   "calls": 1427,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 5,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/nothink-k3/p3": {
+   "questions": 83648,
+   "calls": 83661,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 28,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k0/i1": {
+   "questions": 40309,
+   "calls": 2404,
+   "parse_failures": 145,
+   "parse_failure_rate": 0.0035972115408469574,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k0/i2": {
+   "questions": 2000,
+   "calls": 2099,
+   "parse_failures": 23,
+   "parse_failure_rate": 0.0115,
+   "fallback_calls_discarded": 34,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k0/i3": {
+   "questions": 12687,
+   "calls": 12864,
+   "parse_failures": 2,
+   "parse_failure_rate": 0.0001576416804603137,
+   "fallback_calls_discarded": 109,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k0/p1": {
+   "questions": 44250,
+   "calls": 44253,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 3,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k0/p2": {
+   "questions": 1422,
+   "calls": 1448,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 25,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k0/p3": {
+   "questions": 83648,
+   "calls": 6836,
+   "parse_failures": 17,
+   "parse_failure_rate": 0.0002032325937260903,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k3/i1": {
+   "questions": 40309,
+   "calls": 39474,
+   "parse_failures": 200,
+   "parse_failure_rate": 0.00496167109082339,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k3/i2": {
+   "questions": 2000,
+   "calls": 2113,
+   "parse_failures": 3,
+   "parse_failure_rate": 0.0015,
+   "fallback_calls_discarded": 29,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k3/i3": {
+   "questions": 12687,
+   "calls": 12867,
+   "parse_failures": 3,
+   "parse_failure_rate": 0.00023646252069047056,
+   "fallback_calls_discarded": 96,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k3/p1": {
+   "questions": 44250,
+   "calls": 44252,
+   "parse_failures": 1,
+   "parse_failure_rate": 2.2598870056497175e-05,
+   "fallback_calls_discarded": 2,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k3/p2": {
+   "questions": 1422,
+   "calls": 1450,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 28,
+   "rejected_records": 0
+  },
+  "deepseek-v4.1-flash/think-k3/p3": {
+   "questions": 83648,
+   "calls": 14840,
+   "parse_failures": 16,
+   "parse_failure_rate": 0.00019127773527161438,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k0/i1": {
+   "questions": 40309,
+   "calls": 39474,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k0/i2": {
+   "questions": 2000,
+   "calls": 2090,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 16,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k0/i3": {
+   "questions": 12687,
+   "calls": 12765,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 37,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k0/p1": {
+   "questions": 44250,
+   "calls": 44258,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 4,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k0/p2": {
+   "questions": 1422,
+   "calls": 1422,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k0/p3": {
+   "questions": 83648,
+   "calls": 83633,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k3/i1": {
+   "questions": 40309,
+   "calls": 39474,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k3/i2": {
+   "questions": 2000,
+   "calls": 2087,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 9,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k3/i3": {
+   "questions": 12687,
+   "calls": 12780,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 32,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k3/p1": {
+   "questions": 44250,
+   "calls": 44258,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 8,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k3/p2": {
+   "questions": 1422,
+   "calls": 1422,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/nothink-k3/p3": {
+   "questions": 83648,
+   "calls": 83633,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k0/i1": {
+   "questions": 40309,
+   "calls": 2775,
+   "parse_failures": 30,
+   "parse_failure_rate": 0.0007442506636235084,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k0/i2": {
+   "questions": 2000,
+   "calls": 2095,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 18,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k0/i3": {
+   "questions": 12687,
+   "calls": 12782,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 21,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k0/p1": {
+   "questions": 44250,
+   "calls": 44254,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 3,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k0/p2": {
+   "questions": 1422,
+   "calls": 1424,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 2,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k0/p3": {
+   "questions": 83648,
+   "calls": 21963,
+   "parse_failures": 4,
+   "parse_failure_rate": 4.7819433817903595e-05,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k3/i1": {
+   "questions": 40309,
+   "calls": 39474,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k3/i2": {
+   "questions": 2000,
+   "calls": 2086,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 13,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k3/i3": {
+   "questions": 12687,
+   "calls": 12796,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 27,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k3/p1": {
+   "questions": 44250,
+   "calls": 44253,
+   "parse_failures": 1,
+   "parse_failure_rate": 2.2598870056497175e-05,
+   "fallback_calls_discarded": 3,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k3/p2": {
+   "questions": 1422,
+   "calls": 1422,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  },
+  "kimi-k3/think-k3/p3": {
+   "questions": 83648,
+   "calls": 83633,
+   "parse_failures": 0,
+   "parse_failure_rate": 0.0,
+   "fallback_calls_discarded": 0,
+   "rejected_records": 0
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "source": "splits/p2/train.jsonl",
+ "source_sha256": "ca7740788fabd9604771a088a7425ba0dd26c5ff560e00bae9ef17364a8366dc",
+ "out": "data/derived/p2-3k/train.jsonl",
+ "out_sha256": "54b8694e54e37de01efb87585f46a7a920772e65f8a2a72c4df35e13bd20b163",
+ "n_requested": 3000,
+ "n_records": 3000,
+ "n_groups": 3000,
+ "n_source_records": 11232,
+ "seed": 20261017,
+ "labels": {
+  "relation": {
+   "contradiction": 980,
+   "entailment": 999,
+   "neutral": 1021
+  }
+ }
+}

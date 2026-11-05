@@ -1,0 +1,148 @@
+{
+ "p1": {
+  "rule": "The labels were produced by the CheXpert rule-based labeler applied to this same report text. A finding is 'yes' only when the report states it as present; a finding that is not mentioned counts as 'no'; negated mentions count as 'no'; 'no finding' is 'yes' only when no abnormal finding is mentioned at all.",
+  "train_records": 3000,
+  "rates": {
+   "atelectasis": {
+    "no": 0.77,
+    "yes": 0.23
+   },
+   "cardiomegaly": {
+    "no": 0.794,
+    "yes": 0.206
+   },
+   "consolidation": {
+    "no": 0.946,
+    "yes": 0.054
+   },
+   "edema": {
+    "no": 0.866,
+    "yes": 0.134
+   },
+   "enlarged_cardiomediastinum": {
+    "no": 0.963,
+    "yes": 0.037
+   },
+   "fracture": {
+    "no": 0.976,
+    "yes": 0.024
+   },
+   "lung_lesion": {
+    "no": 0.968,
+    "yes": 0.032
+   },
+   "lung_opacity": {
+    "no": 0.759,
+    "yes": 0.241
+   },
+   "pleural_effusion": {
+    "no": 0.727,
+    "yes": 0.273
+   },
+   "pneumonia": {
+    "no": 0.925,
+    "yes": 0.075
+   },
+   "pneumothorax": {
+    "no": 0.931,
+    "yes": 0.069
+   },
+   "pleural_other": {
+    "no": 0.99,
+    "yes": 0.01
+   },
+   "support_devices": {
+    "no": 0.679,
+    "yes": 0.321
+   },
+   "no_finding": {
+    "no": 0.692,
+    "yes": 0.308
+   }
+  },
+  "text": "The labels were produced by the CheXpert rule-based labeler applied to this same report text. A finding is 'yes' only when the report states it as present; a finding that is not mentioned counts as 'no'; negated mentions count as 'no'; 'no finding' is 'yes' only when no abnormal finding is mentioned at all. Label frequencies in the training sample: atelectasis: no 77%, yes 23%; cardiomegaly: no 79%, yes 21%; consolidation: no 95%, yes 5%; edema: no 87%, yes 13%; enlarged_cardiomediastinum: no 96%, yes 4%; fracture: no 98%, yes 2%; lung_lesion: no 97%, yes 3%; lung_opacity: no 76%, yes 24%; pleural_effusion: no 73%, yes 27%; pneumonia: no 92%, yes 8%; pneumothorax: no 93%, yes 7%; pleural_other: no 99%, yes 1%; support_devices: no 68%, yes 32%; no_finding: no 69%, yes 31%."
+ },
+ "p2": {
+  "rule": "MedNLI: 'entailment' when the hypothesis must be true given the premise, 'contradiction' when it cannot be true given the premise, 'neutral' when the premise does not settle it. The three labels are equally frequent.",
+  "train_records": 3000,
+  "rates": {
+   "relation": {
+    "neutral": 0.34,
+    "entailment": 0.333,
+    "contradiction": 0.327
+   }
+  },
+  "text": "MedNLI: 'entailment' when the hypothesis must be true given the premise, 'contradiction' when it cannot be true given the premise, 'neutral' when the premise does not settle it. The three labels are equally frequent. Label frequencies in the training sample: relation: neutral 34%, entailment 33%, contradiction 33%."
+ },
+ "p3": {
+  "rule": "The label is the triage nurse's Emergency Severity Index at an emergency department visit (MIMIC-IV-ED). ESI 1 means immediate life-saving intervention; ESI 2 high-risk, confused, lethargic, severe pain or distress, or unstable vital signs; ESI 3 two or more resources expected; ESI 4 one resource; ESI 5 none. In this department most visits are ESI 3, and ESI 5 is almost never assigned.",
+  "train_records": 3000,
+  "rates": {
+   "acuity": {
+    "ESI 3: urgent, two or more resources expected": 0.54,
+    "ESI 2: emergent, high risk": 0.324,
+    "ESI 4: less urgent, one resource expected": 0.08,
+    "ESI 1: resuscitation, immediate life-saving intervention": 0.054,
+    "ESI 5: non-urgent, no resources expected": 0.002
+   }
+  },
+  "text": "The label is the triage nurse's Emergency Severity Index at an emergency department visit (MIMIC-IV-ED). ESI 1 means immediate life-saving intervention; ESI 2 high-risk, confused, lethargic, severe pain or distress, or unstable vital signs; ESI 3 two or more resources expected; ESI 4 one resource; ESI 5 none. In this department most visits are ESI 3, and ESI 5 is almost never assigned. Label frequencies in the training sample: acuity: ESI 3: urgent, two or more resources expected 54%, ESI 2: emergent, high risk 32%, ESI 4: less urgent, one resource expected 8%, ESI 1: resuscitation, immediate life-saving intervention 5%, ESI 5: non-urgent, no resources expected 0%."
+ },
+ "i1": {
+  "rule": "The label is the length of the inpatient stay that followed this admission, from the actual encounter period: '1 day or less', '2 to 3 days', '4 to 7 days', 'more than 7 days'. Only admission-time information is shown. Stays of 2 to 7 days are the most common; stays of one day or less are rare.",
+  "train_records": 3000,
+  "rates": {
+   "los": {
+    "2 to 3 days": 0.378,
+    "4 to 7 days": 0.34,
+    "more than 7 days": 0.253,
+    "1 day or less": 0.029
+   }
+  },
+  "text": "The label is the length of the inpatient stay that followed this admission, from the actual encounter period: '1 day or less', '2 to 3 days', '4 to 7 days', 'more than 7 days'. Only admission-time information is shown. Stays of 2 to 7 days are the most common; stays of one day or less are rare. Label frequencies in the training sample: los: 2 to 3 days 38%, 4 to 7 days 34%, more than 7 days 25%, 1 day or less 3%."
+ },
+ "i2": {
+  "rule": "The label is the ICD-10-GM chapter of the single principal diagnosis that was coded for billing (DRG) at the end of this stay, mapped by code range: chapter II (C00-D48) includes benign and uncertain neoplasms D10-D48; chapter III starts at D50; chapter VII is the eye (H00-H59) and chapter VIII the ear (H60-H95); chapter XIX covers injuries and poisoning (S00-T98). Neoplasms (II) and circulatory diseases (IX) together make up over half of the stays.",
+  "train_records": 3000,
+  "rates": {
+   "chapter": {
+    "II": 0.325,
+    "IX": 0.217,
+    "XIII": 0.086,
+    "X": 0.058,
+    "XI": 0.053,
+    "XV": 0.052,
+    "VI": 0.04,
+    "XIX": 0.033,
+    "IV": 0.032,
+    "XIV": 0.022,
+    "XXI": 0.021,
+    "XVI": 0.018,
+    "I": 0.011,
+    "XVII": 0.011,
+    "XVIII": 0.008,
+    "XII": 0.004,
+    "VIII": 0.004,
+    "III": 0.003,
+    "VII": 0.002,
+    "V": 0.001
+   }
+  },
+  "text": "The label is the ICD-10-GM chapter of the single principal diagnosis that was coded for billing (DRG) at the end of this stay, mapped by code range: chapter II (C00-D48) includes benign and uncertain neoplasms D10-D48; chapter III starts at D50; chapter VII is the eye (H00-H59) and chapter VIII the ear (H60-H95); chapter XIX covers injuries and poisoning (S00-T98). Neoplasms (II) and circulatory diseases (IX) together make up over half of the stays. Label frequencies in the training sample: chapter: II 32%, IX 22%, XIII 9%, X 6%, XI 5%, XV 5%, VI 4%, XIX 3%, IV 3%, XIV 2%, XXI 2%, XVI 2%, I 1%, XVII 1%, XVIII 1%, XII 0%, VIII 0%, III 0%, VII 0%, V 0%."
+ },
+ "i3": {
+  "rule": "The label is the ICD-O-3 behaviour digit of the pathologist's coded conclusion for this report: behaviour /3 (malignant, primary), /6 (metastatic) and /9 count as malignant; /0 (benign), /1 (uncertain) and /2 (in situ) count as not malignant. 'Metastatic' is asked only for malignant reports and means behaviour /6. Most coded reports in this archive are malignant.",
+  "train_records": 3000,
+  "rates": {
+   "malignant": {
+    "yes": 0.877,
+    "no": 0.123
+   },
+   "metastatic": {
+    "no": 0.745,
+    "yes": 0.255
+   }
+  },
+  "text": "The label is the ICD-O-3 behaviour digit of the pathologist's coded conclusion for this report: behaviour /3 (malignant, primary), /6 (metastatic) and /9 count as malignant; /0 (benign), /1 (uncertain) and /2 (in situ) count as not malignant. 'Metastatic' is asked only for malignant reports and means behaviour /6. Most coded reports in this archive are malignant. Label frequencies in the training sample: malignant: yes 88%, no 12%; metastatic: no 74%, yes 26%."
+ }
+}

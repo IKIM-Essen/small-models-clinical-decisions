@@ -1,0 +1,32 @@
+# Kubernetes Job for one CPU run (classical baseline, frontier scoring through the gateway). Fill it with envsubst:
+#   RUNNER_NAME=p1-classical-s0 RUNNER_CMD_B64=$(printf %s '<command>' | base64 | tr -d '\n') RUNNER_DEADLINE_S=86400 \
+#   envsubst '${RUNNER_NAME} ${RUNNER_CMD_B64} ${RUNNER_DEADLINE_S}' < k8s/runner-job.yaml | kubectl apply -f -
+# Before use, set the image, the volume claim and the secret with the gateway key.
+apiVersion: batch/v1
+kind: Job
+metadata: {name: kev-runner-${RUNNER_NAME}, labels: {app: small-models-clinical-decision, tier: runner}}
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: ${RUNNER_DEADLINE_S}
+  ttlSecondsAfterFinished: 86400
+  template:
+    metadata:
+      labels: {app: small-models-clinical-decision, tier: runner}
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: runner
+        image: your-registry/small-models-clinical-decision:latest
+        workingDir: /workspace/small-models-clinical-decision
+        command: ["bash", "-c", "echo \"$RUNNER_CMD_B64\" | base64 -d | bash"]
+        env:
+        - {name: RUNNER_CMD_B64, value: "${RUNNER_CMD_B64}"}
+        - {name: KEV_ROOT, value: /workspace/small-models-clinical-decision}
+        - {name: KEV_LITELLM_KEY, valueFrom: {secretKeyRef: {name: gateway-secrets, key: litellm_key, optional: true}}}
+        resources:
+          requests: {cpu: "4", memory: 16Gi}
+          limits: {cpu: "8", memory: 32Gi}
+        volumeMounts:
+        - {mountPath: /workspace, name: workspace}
+      volumes:
+      - {name: workspace, persistentVolumeClaim: {claimName: your-workspace-claim}}

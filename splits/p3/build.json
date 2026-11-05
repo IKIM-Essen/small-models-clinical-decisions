@@ -1,0 +1,85 @@
+{
+  "task": "p3",
+  "kev_type": "score",
+  "seed": 20260925,
+  "variant": "main",
+  "extracted_at": null,
+  "source": "data/public/physionet",
+  "consort": {
+    "edstays": 425087,
+    "dropped_no_triage": 0,
+    "dropped_no_patient": 76,
+    "dropped_missing_acuity": 6986,
+    "dropped_acuity_out_of_range": 0,
+    "records": 418025,
+    "subjects_overlapping_splits": 0,
+    "n_train": 292688,
+    "n_dev": 41689,
+    "n_test": 83648
+  },
+  "git_commit": "e889bdca5f4d8af2aad0807984531bcdc1becc85",
+  "splits": {
+    "train": {
+      "n": 292688,
+      "questions": {
+        "acuity": {
+          "type": "score",
+          "labels": {
+            "2": 157593,
+            "1": 97762,
+            "3": 19895,
+            "0": 16676,
+            "4": 762
+          }
+        }
+      }
+    },
+    "dev": {
+      "n": 41689,
+      "questions": {
+        "acuity": {
+          "type": "score",
+          "labels": {
+            "2": 22343,
+            "1": 13958,
+            "0": 2444,
+            "3": 2825,
+            "4": 119
+          }
+        }
+      }
+    },
+    "test": {
+      "n": 83648,
+      "questions": {
+        "acuity": {
+          "type": "score",
+          "labels": {
+            "1": 27670,
+            "2": 45088,
+            "0": 4894,
+            "3": 5777,
+            "4": 219
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 292688,
+      "sha256": "a9c4aeaa9130e5b7a632ac20ac4eb855f00399cd38ee3511898cfccff6745246",
+      "bytes": 233661722
+    },
+    "dev.jsonl": {
+      "records": 41689,
+      "sha256": "19670e489daa4a44f60368d67e33499574f4e7aed5ea3849f85cb833b33eae05",
+      "bytes": 33282372
+    },
+    "test.jsonl": {
+      "records": 83648,
+      "sha256": "f5022c80f113a0b3f9b4fd2198956d1363bc574df25891220057779b5927c2b4",
+      "bytes": 66784817
+    }
+  }
+}
